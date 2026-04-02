@@ -3,9 +3,68 @@ import cors from "cors";
 import pg from "pg";
 
 const app = express();
-const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL });
 
-app.use(cors({ origin: process.env.CORS_ORIGIN || "*" }));
+// Postgres with SSL support for Railway
+const pool = new pg.Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: process.env.DATABASE_URL?.includes("railway")
+    ? { rejectUnauthorized: false }
+    : false,
+});
+
+// CORS: restrict to frontend origin in production
+const allowedOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(",").map((o) => o.trim())
+  : null;
+
+app.use(
+  cors({
+    origin: allowedOrigins
+      ? (origin, cb) => {
+          if (!origin || allowedOrigins.includes(origin)) cb(null, true);
+          else cb(new Error("Not allowed by CORS"));
+        }
+      : "*",
+  })
+);
+
+// Simple rate limiter: per-IP, in-memory
+const rateLimit = new Map();
+const RATE_WINDOW = 60_000; // 1 minute
+const RATE_MAX = 60; // requests per window
+
+app.use((req, res, next) => {
+  const ip = req.headers["x-forwarded-for"]?.split(",")[0]?.trim() || req.ip;
+  const now = Date.now();
+  const entry = rateLimit.get(ip);
+
+  if (!entry || now - entry.start > RATE_WINDOW) {
+    rateLimit.set(ip, { start: now, count: 1 });
+    return next();
+  }
+
+  entry.count++;
+  if (entry.count > RATE_MAX) {
+    return res.status(429).json({ error: "Too many requests" });
+  }
+  next();
+});
+
+// Clean up rate limit map every 5 minutes
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, entry] of rateLimit) {
+    if (now - entry.start > RATE_WINDOW) rateLimit.delete(ip);
+  }
+}, 300_000);
+
+// Security headers
+app.use((_req, res, next) => {
+  res.set("X-Content-Type-Options", "nosniff");
+  res.set("X-Frame-Options", "DENY");
+  res.set("Referrer-Policy", "strict-origin-when-cross-origin");
+  next();
+});
 
 // Health check
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
