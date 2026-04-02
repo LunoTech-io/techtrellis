@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "node migrate.js && node seed.js && node server.js",
     "migrate": "node migrate.js",
     "seed": "node seed.js",
     "setup": "node migrate.js && node seed.js"
