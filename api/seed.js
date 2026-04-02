@@ -33,38 +33,15 @@ const KIND = {
 
 const RC = { A: "#E07A3A", R: "#5DAE72", C: "#B08AD6", I: "#8A8878" };
 
-// Import LATTICE data from main file dynamically
-async function loadLattice() {
-  // We read the techtrellis.jsx and extract the LATTICE array
-  const { readFileSync } = await import("fs");
-  const { join, dirname } = await import("path");
-  const { fileURLToPath } = await import("url");
-  const __dirname = dirname(fileURLToPath(import.meta.url));
+import { readFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 
-  const src = readFileSync(join(__dirname, "..", "techtrellis.jsx"), "utf8");
-
-  // Extract LATTICE array between "const LATTICE = [" and the matching "];"
-  const start = src.indexOf("const LATTICE = [");
-  const coreStart = src.indexOf("[", start);
-
-  // Find the matching close bracket by counting nesting
-  let depth = 0;
-  let end = coreStart;
-  for (let i = coreStart; i < src.length; i++) {
-    if (src[i] === "[") depth++;
-    if (src[i] === "]") depth--;
-    if (depth === 0) { end = i + 1; break; }
-  }
-
-  const latticeStr = src.slice(coreStart, end);
-  // Convert JS object syntax to something eval-able
-  const lattice = eval(latticeStr);
-  return lattice;
-}
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const LATTICE = JSON.parse(readFileSync(join(__dirname, "lattice-data.json"), "utf8"));
 
 async function seed() {
   const client = await pool.connect();
-  const LATTICE = await loadLattice();
 
   try {
     await client.query("BEGIN");

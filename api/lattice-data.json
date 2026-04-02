@@ -1,0 +1,3320 @@
+[
+  {
+    "id": "attract",
+    "num": "01",
+    "label": "Attract",
+    "core": "How you pull engineers toward you",
+    "phases": {
+      "seed": {
+        "reality": "Your brand IS the founders. Nobody's heard of you. Every coffee chat is a recruiting pitch.",
+        "goals": [
+          {
+            "text": "Founders' network generates 80%+ of candidate pipeline"
+          },
+          {
+            "text": "A compelling 'why join us' narrative that converts in one conversation"
+          },
+          {
+            "text": "Active presence in 2-3 relevant engineering communities"
+          }
+        ],
+        "team": [
+          {
+            "role": "Founding Engineer(s)",
+            "raci": "A+R",
+            "note": "You ARE the employer brand"
+          },
+          {
+            "role": "CEO / Co-founder",
+            "raci": "R",
+            "note": "Mission pitch in every interaction"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Network-sourced pipeline",
+            "why": "Reveals if your network is your only channel"
+          },
+          {
+            "name": "Referral response rate",
+            "why": "Measures founder credibility in the talent market"
+          },
+          {
+            "name": "Offer-to-close time",
+            "why": "Speed is your biggest advantage over larger companies"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Founding Story One-Pager",
+            "kind": "essential",
+            "desc": "Why this, why now, why us — in 200 words"
+          },
+          {
+            "title": "Candidate Pitch Script",
+            "kind": "essential",
+            "desc": "The 10-min founder pitch for recruiting"
+          }
+        ],
+        "dx": "Your GitHub repo IS your tech brand. README quality matters more than a careers page.",
+        "avoid": [
+          "Employer branding campaigns",
+          "Hiring a recruiter",
+          "Building a careers page before PMF"
+        ]
+      },
+      "startup": {
+        "reality": "Competing with known companies for talent. Your edge: speed, mission, equity, and the chance to build from scratch.",
+        "goals": [
+          {
+            "text": "First engineering blog post — real, technical, authentic"
+          },
+          {
+            "text": "Referral program live, generating 30%+ of pipeline"
+          },
+          {
+            "text": "Glassdoor / LinkedIn shows genuine engineering culture"
+          },
+          {
+            "text": "First open-source project from the team"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Lead",
+            "raci": "A",
+            "note": "Owns the engineering voice"
+          },
+          {
+            "role": "First Recruiter",
+            "raci": "R",
+            "note": "Pipeline operations"
+          },
+          {
+            "role": "All Engineers",
+            "raci": "C",
+            "note": "Content, referrals, authenticity"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Inbound vs outbound ratio",
+            "why": "Shows if your brand pulls talent or you chase it"
+          },
+          {
+            "name": "Referral pipeline share",
+            "why": "High referrals signal genuine team satisfaction"
+          },
+          {
+            "name": "Eng blog posts / month",
+            "why": "Content velocity builds compounding brand awareness"
+          },
+          {
+            "name": "Candidate NPS",
+            "why": "Bad candidate experience poisons your talent market fast"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Blog Kickstart Guide",
+            "kind": "playbook",
+            "desc": "First 5 posts that actually attract engineers"
+          },
+          {
+            "title": "Referral Program Design",
+            "kind": "template",
+            "desc": "Simple structure that motivates referrals"
+          },
+          {
+            "title": "Tech Stack Decision Log",
+            "kind": "artifact",
+            "desc": "Public 'why we chose X' for credibility"
+          }
+        ],
+        "dx": "Your DevEx is a recruiting tool. Engineers talk. A great local dev experience travels by word of mouth.",
+        "avoid": [
+          "Outsourcing fully to agencies",
+          "Generic job posts",
+          "Competing on salary alone vs equity + mission"
+        ]
+      },
+      "scaleup": {
+        "reality": "Founders' network is tapped out. You need a systematic engine. Brand must scale beyond personal connections.",
+        "goals": [
+          {
+            "text": "Engineering blog drives 20%+ of qualified inbound"
+          },
+          {
+            "text": "2+ conference talks per quarter from team engineers"
+          },
+          {
+            "text": "Tech Radar published and maintained quarterly"
+          },
+          {
+            "text": "Open-source project with external contributors"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Engineering",
+            "raci": "A",
+            "note": "Engineering brand strategy"
+          },
+          {
+            "role": "TA Lead (2-3 recruiters)",
+            "raci": "R",
+            "note": "Scaled pipeline"
+          },
+          {
+            "role": "DevRel (first hire)",
+            "raci": "R",
+            "note": "Content + community"
+          },
+          {
+            "role": "Senior Engineers",
+            "raci": "C",
+            "note": "Authentic technical voice"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Inbound quality score",
+            "why": "Volume without quality wastes recruiter bandwidth"
+          },
+          {
+            "name": "Blog → Apply conversion",
+            "why": "Connects content investment to actual pipeline ROI"
+          },
+          {
+            "name": "Conference submissions / qtr",
+            "why": "Tracks team willingness to represent the brand publicly"
+          },
+          {
+            "name": "Cost per quality hire",
+            "why": "Ensures brand investment reduces acquisition cost over time"
+          },
+          {
+            "name": "Glassdoor eng rating",
+            "why": "Candidates check Glassdoor before responding to outreach"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Tech Radar Template",
+            "kind": "framework",
+            "desc": "Adopt / Trial / Assess / Hold quadrant"
+          },
+          {
+            "title": "Conference Talk Toolkit",
+            "kind": "toolkit",
+            "desc": "CFP templates, speaker prep"
+          },
+          {
+            "title": "Engineering Blog Calendar",
+            "kind": "playbook",
+            "desc": "Draft-to-distribution pipeline"
+          },
+          {
+            "title": "OSS Contribution Policy",
+            "kind": "policy",
+            "desc": "When and how to contribute upstream"
+          }
+        ],
+        "dx": "Backstage or IDP becomes a recruiting differentiator. 'We invest in DevEx' is a real competitive advantage.",
+        "avoid": [
+          "Still relying on founders' network",
+          "No content strategy",
+          "Ignoring Glassdoor / Blind"
+        ]
+      },
+      "growth": {
+        "reality": "Hiring at volume. Brand needs to be a machine. Multiple sub-brands by team and domain.",
+        "goals": [
+          {
+            "text": "Top-10 in relevant 'Best Engineering Teams' rankings"
+          },
+          {
+            "text": "Engineering brand awareness > 40% in target talent pools"
+          },
+          {
+            "text": "Dedicated DevRel / Eng Marketing team of 3+"
+          },
+          {
+            "text": "University partnership pipeline with 5+ schools"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Engineering",
+            "raci": "A",
+            "note": "Brand strategy"
+          },
+          {
+            "role": "DevRel Team (3+)",
+            "raci": "R",
+            "note": "Content, events, community"
+          },
+          {
+            "role": "TA Org (8-12)",
+            "raci": "R",
+            "note": "Pipeline at scale"
+          },
+          {
+            "role": "Employer Brand Marketing",
+            "raci": "R",
+            "note": "Campaigns, PR"
+          },
+          {
+            "role": "Staff+ Engineers",
+            "raci": "C",
+            "note": "Keynotes, blogs, OSS"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Brand awareness (target pool)",
+            "why": "Unmeasured brand is just hope disguised as strategy"
+          },
+          {
+            "name": "GitHub org stars",
+            "why": "Proxy for external developer mindshare and credibility"
+          },
+          {
+            "name": "Inbound quality pipeline",
+            "why": "Flipping to inbound-dominant cuts cost and boosts quality"
+          },
+          {
+            "name": "University pipeline yield",
+            "why": "Early-career pipeline secures talent before competitors do"
+          },
+          {
+            "name": "Blog monthly readers",
+            "why": "Audience size drives top-of-funnel for passive candidates"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Employer Brand Strategy",
+            "kind": "framework",
+            "desc": "Multi-channel brand architecture"
+          },
+          {
+            "title": "University Relations Playbook",
+            "kind": "playbook",
+            "desc": "Intern → new grad pipeline"
+          },
+          {
+            "title": "Blog Editorial Standards",
+            "kind": "policy",
+            "desc": "Quality bar, voice, review process"
+          },
+          {
+            "title": "Awards Submission Kit",
+            "kind": "toolkit",
+            "desc": "Best-of lists, applications"
+          }
+        ],
+        "dx": "Your IDP, Tech Radar, and eng practices become externally published assets. Think Spotify model, Netflix culture deck.",
+        "avoid": [
+          "One-size-fits-all brand",
+          "Ignoring sub-brands by domain",
+          "No attribution tracking"
+        ]
+      },
+      "enterprise": {
+        "reality": "Defending brand while innovating. Managing 'too corporate' perception. Multiple geos and business units.",
+        "goals": [
+          {
+            "text": "Perceived as 'innovative' despite scale (annual brand survey)"
+          },
+          {
+            "text": "Major OSS project adopted externally (1K+ stars)"
+          },
+          {
+            "text": "Engineering podcast / video series: 50K+ monthly audience"
+          },
+          {
+            "text": "Cross-acquisition talent pipeline > 10% of mobility"
+          }
+        ],
+        "team": [
+          {
+            "role": "CTO / SVP Engineering",
+            "raci": "A",
+            "note": "Enterprise brand steward"
+          },
+          {
+            "role": "DevRel Org (10+)",
+            "raci": "R",
+            "note": "Global content + events"
+          },
+          {
+            "role": "TA Org (30+)",
+            "raci": "R",
+            "note": "Global pipeline machine"
+          },
+          {
+            "role": "Corporate Comms",
+            "raci": "C",
+            "note": "Brand alignment"
+          },
+          {
+            "role": "OSS Program Office",
+            "raci": "R",
+            "note": "Strategic open-source"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Innovation perception",
+            "why": "Enterprises die when top talent sees them as boring"
+          },
+          {
+            "name": "OSS external adoption",
+            "why": "Proves engineering impact extends beyond the company"
+          },
+          {
+            "name": "Content monthly reach",
+            "why": "Sustained reach keeps you relevant in a noisy market"
+          },
+          {
+            "name": "Attrition to FAANG/startups",
+            "why": "Signals whether your brand competes at the top tier"
+          },
+          {
+            "name": "Internal brand satisfaction",
+            "why": "External brand rings hollow if engineers inside disagree"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Enterprise Brand Audit",
+            "kind": "framework",
+            "desc": "Annual perception measurement"
+          },
+          {
+            "title": "OSS Strategy & Governance",
+            "kind": "policy",
+            "desc": "What to open-source, how to sustain"
+          },
+          {
+            "title": "Multi-Geo Brand Playbook",
+            "kind": "playbook",
+            "desc": "Localized employer brand strategies"
+          },
+          {
+            "title": "Acquisition Integration Guide",
+            "kind": "toolkit",
+            "desc": "Culture merging for acquired teams"
+          }
+        ],
+        "dx": "At forest scale, your DevEx platform IS a product. Backstage instances, internal SDKs, and platform blogs become external assets.",
+        "avoid": [
+          "Believing brand sells itself",
+          "Ignoring 'too corporate' vibe",
+          "Not empowering individual eng voices"
+        ]
+      }
+    }
+  },
+  {
+    "id": "select",
+    "num": "02",
+    "label": "Select",
+    "core": "How you evaluate and close engineers",
+    "phases": {
+      "seed": {
+        "reality": "You're co-founder dating. Culture fit and raw ability matter more than a process.",
+        "goals": [
+          {
+            "text": "Every hire does a paid trial day or pairing session"
+          },
+          {
+            "text": "Close candidates within 5 days of first conversation"
+          }
+        ],
+        "team": [
+          {
+            "role": "CTO / Founder",
+            "raci": "A+R",
+            "note": "Makes every hiring call"
+          },
+          {
+            "role": "Existing team",
+            "raci": "C",
+            "note": "Pairing during trial"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Time to decision",
+            "why": "Slow decisions lose candidates to faster-moving startups"
+          },
+          {
+            "name": "Trial-to-offer rate",
+            "why": "Low conversion means your trial filters signal or scares talent"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Paid Trial Day Structure",
+            "kind": "essential",
+            "desc": "What to work on, how to evaluate"
+          },
+          {
+            "title": "Founder Interview Guide",
+            "kind": "essential",
+            "desc": "5 questions that reveal builders"
+          }
+        ],
+        "dx": "Give candidates repo access during trial. Their reaction to your codebase IS the signal.",
+        "avoid": [
+          "Multi-round loops",
+          "Whiteboard coding",
+          "Take-homes over 2 hours"
+        ]
+      },
+      "startup": {
+        "reality": "First interview structure. First rubrics. Balancing speed with signal quality.",
+        "goals": [
+          {
+            "text": "Structured rubrics for technical + values assessment"
+          },
+          {
+            "text": "Time-to-hire ≤ 15 days"
+          },
+          {
+            "text": "Work-sample > whiteboard for all technical rounds"
+          },
+          {
+            "text": "Offer acceptance ≥ 85%"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Lead",
+            "raci": "A",
+            "note": "Hiring bar owner"
+          },
+          {
+            "role": "Recruiter",
+            "raci": "R",
+            "note": "Process + experience"
+          },
+          {
+            "role": "Interview panel (2-3)",
+            "raci": "R",
+            "note": "Calibrated evaluators"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Time to hire",
+            "why": "Every extra day increases drop-off to competing offers"
+          },
+          {
+            "name": "Offer acceptance rate",
+            "why": "Low acceptance exposes comp or culture misalignment"
+          },
+          {
+            "name": "Candidate NPS",
+            "why": "Rejected candidates still talk about your process publicly"
+          },
+          {
+            "name": "Quality of hire (6mo)",
+            "why": "Validates whether interview signals predict real performance"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Interview Rubric v1",
+            "kind": "template",
+            "desc": "Structured scorecard"
+          },
+          {
+            "title": "Work-Sample Kit",
+            "kind": "toolkit",
+            "desc": "Real problems, time-boxed"
+          },
+          {
+            "title": "Closing Playbook",
+            "kind": "playbook",
+            "desc": "Competing with bigger offers"
+          }
+        ],
+        "dx": "Dev env setup speed is a hiring signal. If candidates struggle, new hires will too.",
+        "avoid": [
+          "Unstructured 'vibe check' rounds",
+          "No scorecards",
+          "Ghosting rejected candidates"
+        ]
+      },
+      "scaleup": {
+        "reality": "Scaling quality at volume. Interviewer training. Cross-manager calibration becomes critical.",
+        "goals": [
+          {
+            "text": "All interviewers trained + certified, IRR > 0.65"
+          },
+          {
+            "text": "Time-to-hire ≤ 25 days at 5+ hires/month"
+          },
+          {
+            "text": "Score-first debriefs: individual scores submitted before group discussion"
+          },
+          {
+            "text": "Diversity tracked at every funnel stage"
+          }
+        ],
+        "team": [
+          {
+            "role": "Hiring Managers",
+            "raci": "A",
+            "note": "Bar + final call"
+          },
+          {
+            "role": "TA Team (3-5)",
+            "raci": "R",
+            "note": "Scaled pipeline ops"
+          },
+          {
+            "role": "Trained Panel (10-15)",
+            "raci": "R",
+            "note": "Certified interviewers"
+          },
+          {
+            "role": "People Ops / Comp",
+            "raci": "C",
+            "note": "Bands, equity, offers"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Time to hire",
+            "why": "Proves you can scale hiring without sacrificing speed"
+          },
+          {
+            "name": "Inter-rater reliability",
+            "why": "Low IRR means your bar depends on who interviews"
+          },
+          {
+            "name": "Offer acceptance",
+            "why": "Declining acceptance at volume signals systemic closing gaps"
+          },
+          {
+            "name": "Diversity pipeline %",
+            "why": "Pipeline diversity is the leading indicator for team diversity"
+          },
+          {
+            "name": "Candidate NPS",
+            "why": "Process quality at scale separates you from competitors"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Interviewer Certification",
+            "kind": "playbook",
+            "desc": "Training, shadow, calibrate"
+          },
+          {
+            "title": "System Design Guide",
+            "kind": "framework",
+            "desc": "Level-calibrated rubrics"
+          },
+          {
+            "title": "Debrief Protocol",
+            "kind": "policy",
+            "desc": "Score-first, discuss-second"
+          },
+          {
+            "title": "Comp Benchmarking",
+            "kind": "template",
+            "desc": "Market data-informed bands"
+          }
+        ],
+        "dx": "Start measuring time-to-productive as a hire quality signal. Connect recruiting → onboard → ship data.",
+        "avoid": [
+          "Uncalibrated interviewers",
+          "Manager overrides without data",
+          "No pipeline diversity tracking"
+        ]
+      },
+      "growth": {
+        "reality": "10-20 hires/month. Hiring committees. Dedicated recruiting ops. Process is a product.",
+        "goals": [
+          {
+            "text": "Hiring committee model for IC4+ and all manager roles"
+          },
+          {
+            "text": "Time-to-hire stable ≤ 28 days despite volume"
+          },
+          {
+            "text": "Automated pipeline analytics with conversion tracking"
+          },
+          {
+            "text": "Published compensation philosophy"
+          }
+        ],
+        "team": [
+          {
+            "role": "Hiring Committees",
+            "raci": "A",
+            "note": "Calibrated decision bodies"
+          },
+          {
+            "role": "TA Org (8-12)",
+            "raci": "R",
+            "note": "Specialized by level"
+          },
+          {
+            "role": "Recruiting Ops",
+            "raci": "R",
+            "note": "Analytics, process"
+          },
+          {
+            "role": "DEI Team",
+            "raci": "C",
+            "note": "Equity, bias mitigation"
+          },
+          {
+            "role": "Comp Team",
+            "raci": "C",
+            "note": "Total rewards strategy"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Time to hire (at volume)",
+            "why": "Stable speed despite volume proves process maturity"
+          },
+          {
+            "name": "Committee agreement rate",
+            "why": "Disagreement reveals calibration drift across teams"
+          },
+          {
+            "name": "Screen → offer conversion",
+            "why": "Funnel efficiency prevents recruiter burnout at scale"
+          },
+          {
+            "name": "1yr quality of hire",
+            "why": "Links hiring decisions to long-term business outcomes"
+          },
+          {
+            "name": "Offer competitiveness",
+            "why": "Below-market offers waste pipeline you paid to build"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Hiring Committee Playbook",
+            "kind": "framework",
+            "desc": "Structure, calibration, decisions"
+          },
+          {
+            "title": "Recruiting Ops Dashboard",
+            "kind": "toolkit",
+            "desc": "Pipeline health and velocity"
+          },
+          {
+            "title": "Compensation Philosophy",
+            "kind": "policy",
+            "desc": "Bands, equity, geo tiers"
+          },
+          {
+            "title": "Anti-Bias Interview Guide",
+            "kind": "playbook",
+            "desc": "Structured bias reduction"
+          }
+        ],
+        "dx": "Hiring data connects to perf data. Which interview signals predict 1-year success?",
+        "avoid": [
+          "Every manager runs own process",
+          "No hiring committees",
+          "Comp by negotiation"
+        ]
+      },
+      "enterprise": {
+        "reality": "Global machine. Regulatory complexity. University programs. Internal mobility competes with external hiring.",
+        "goals": [
+          {
+            "text": "Global standards with local adaptation framework"
+          },
+          {
+            "text": "Internal mobility fills 25%+ of open roles"
+          },
+          {
+            "text": "AI-assisted screening with published bias audits"
+          },
+          {
+            "text": "University pipeline yields 20%+ of entry-level"
+          }
+        ],
+        "team": [
+          {
+            "role": "Global Head of TA",
+            "raci": "A",
+            "note": "Standards, strategy"
+          },
+          {
+            "role": "Regional TA Teams (30+)",
+            "raci": "R",
+            "note": "Local execution"
+          },
+          {
+            "role": "Recruiting Technology",
+            "raci": "R",
+            "note": "ATS, AI, analytics"
+          },
+          {
+            "role": "Employment Legal",
+            "raci": "C",
+            "note": "Multi-jurisdiction"
+          },
+          {
+            "role": "University Relations",
+            "raci": "R",
+            "note": "Intern / new grad"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Global time-to-fill",
+            "why": "Consistency across geos prevents regional talent bottlenecks"
+          },
+          {
+            "name": "Internal fill rate",
+            "why": "Internal moves cost less and retain institutional knowledge"
+          },
+          {
+            "name": "AI bias audit score",
+            "why": "Unaudited AI screening creates legal and ethical liability"
+          },
+          {
+            "name": "Process compliance",
+            "why": "Non-compliance across jurisdictions invites regulatory risk"
+          },
+          {
+            "name": "University yield",
+            "why": "Measures ROI on early-career talent investment programs"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Global Hiring Standards",
+            "kind": "framework",
+            "desc": "Core + local adaptation"
+          },
+          {
+            "title": "AI Screening Governance",
+            "kind": "policy",
+            "desc": "Bias audits, transparency"
+          },
+          {
+            "title": "Internal Mobility Program",
+            "kind": "playbook",
+            "desc": "Cross-team posting and moves"
+          },
+          {
+            "title": "University Relations Kit",
+            "kind": "toolkit",
+            "desc": "Multi-school pipeline"
+          }
+        ],
+        "dx": "Enterprise ATS integrates with IDP. New hires auto-provisioned into Backstage on Day 1.",
+        "avoid": [
+          "One global process ignoring local context",
+          "No bias audit on AI",
+          "Mobility as afterthought"
+        ]
+      }
+    }
+  },
+  {
+    "id": "launch",
+    "num": "03",
+    "label": "Launch",
+    "core": "How fast new engineers reach first impact",
+    "phases": {
+      "seed": {
+        "reality": "No onboarding. There's 'here's the repo, here's Slack, let's pair on something real.'",
+        "goals": [
+          {
+            "text": "New engineer ships code on Day 1"
+          },
+          {
+            "text": "Full architecture context within Week 1 via pairing"
+          }
+        ],
+        "team": [
+          {
+            "role": "CTO / Tech Lead",
+            "raci": "A+R",
+            "note": "Pairs with every new hire"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Time to first commit",
+            "why": "Early contribution builds confidence and belonging fast"
+          },
+          {
+            "name": "Context ramp (self-report)",
+            "why": "Unspoken tribal knowledge is the real onboarding blocker"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "README That Explains Everything",
+            "kind": "essential",
+            "desc": "Setup, arch, decisions"
+          },
+          {
+            "title": "One-Command Dev Setup",
+            "kind": "essential",
+            "desc": "docker-compose up"
+          }
+        ],
+        "dx": "If your dev setup takes > 30 minutes, fix that before hiring anyone else.",
+        "avoid": [
+          "No README",
+          "Tribal knowledge only",
+          "Full-day setup process"
+        ]
+      },
+      "startup": {
+        "reality": "First real onboarding structure. Buddy system starts. Written architecture docs appear.",
+        "goals": [
+          {
+            "text": "Dev environment fully operational within 2 hours"
+          },
+          {
+            "text": "First PR merged within 3 business days"
+          },
+          {
+            "text": "30-day ramp checklist with buddy accountability"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Manager",
+            "raci": "A",
+            "note": "Owns the ramp trajectory"
+          },
+          {
+            "role": "Onboarding Buddy",
+            "raci": "R",
+            "note": "Daily check-ins in Week 1"
+          },
+          {
+            "role": "Team Lead",
+            "raci": "C",
+            "note": "Architecture context"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Dev env setup time",
+            "why": "Setup friction predicts new-hire frustration and early doubt"
+          },
+          {
+            "name": "Time to first PR",
+            "why": "First PR is a proxy for how quickly someone feels productive"
+          },
+          {
+            "name": "Day 30 NPS",
+            "why": "Early dissatisfaction predicts 90-day attrition"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "30-Day Ramp Checklist",
+            "kind": "playbook",
+            "desc": "Weekly milestones + buddy checkpoints"
+          },
+          {
+            "title": "Architecture Overview",
+            "kind": "artifact",
+            "desc": "System context, data flow, key decisions"
+          },
+          {
+            "title": "Buddy Guide",
+            "kind": "template",
+            "desc": "Week 1, 2, 3, 4 responsibilities"
+          }
+        ],
+        "dx": "Automate dev env setup. Every hour saved here pays back on every future hire.",
+        "avoid": [
+          "No buddy system",
+          "Sink-or-swim mentality",
+          "Arch only in people's heads"
+        ]
+      },
+      "scaleup": {
+        "reality": "Structured 30-60-90. Platform engineering starts owning the dev environment. Consistency matters.",
+        "goals": [
+          {
+            "text": "Dev env self-service ≤ 4 hours (platform-owned)"
+          },
+          {
+            "text": "First PR merged within 5 days with structured review"
+          },
+          {
+            "text": "Architecture deep-dive program by Day 14"
+          },
+          {
+            "text": "Day 90 ramp score ≥ 85%"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Manager",
+            "raci": "A",
+            "note": "30-60-90 trajectory"
+          },
+          {
+            "role": "Onboarding Buddy",
+            "raci": "R",
+            "note": "Technical guide"
+          },
+          {
+            "role": "Platform Engineering",
+            "raci": "R",
+            "note": "Dev env, golden paths"
+          },
+          {
+            "role": "Tech Lead",
+            "raci": "C",
+            "note": "Arch context, code review"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Dev env spin-up time",
+            "why": "Platform-owned setup proves your golden paths actually work"
+          },
+          {
+            "name": "Time to first PR",
+            "why": "Slower at scale reveals process bloat in onboarding"
+          },
+          {
+            "name": "Day 90 ramp score",
+            "why": "Measures if structured onboarding delivers real competence"
+          },
+          {
+            "name": "90-day attrition",
+            "why": "Early exits are the most expensive hiring failures"
+          },
+          {
+            "name": "Day 30 NPS",
+            "why": "Captures onboarding quality while experience is still fresh"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "30-60-90 Day Plan",
+            "kind": "framework",
+            "desc": "Milestone-driven with checkpoints"
+          },
+          {
+            "title": "Dev Env Bootstrap",
+            "kind": "toolkit",
+            "desc": "Platform-owned self-service"
+          },
+          {
+            "title": "ADR Library",
+            "kind": "artifact",
+            "desc": "Architecture Decision Records"
+          },
+          {
+            "title": "Buddy Handbook v2",
+            "kind": "playbook",
+            "desc": "Structured buddy program"
+          }
+        ],
+        "dx": "Backstage/IDP onboarding: new engineer → scaffolded service → first deploy in hours.",
+        "avoid": [
+          "Team-specific onboarding, no standard",
+          "Manual env setup",
+          "No architecture docs"
+        ]
+      },
+      "growth": {
+        "reality": "Onboarding is a product with its own team. Cohort-based. Engineering Academy.",
+        "goals": [
+          {
+            "text": "Cohort-based onboarding for 10+ engineers/month"
+          },
+          {
+            "text": "Zero-touch dev env < 2 hours (platform SLO)"
+          },
+          {
+            "text": "2-week Engineering Academy technical ramp"
+          },
+          {
+            "text": "Buddy and manager NPS both > 4.5"
+          }
+        ],
+        "team": [
+          {
+            "role": "Onboarding Program Manager",
+            "raci": "A",
+            "note": "Full-time owner"
+          },
+          {
+            "role": "Platform Engineering",
+            "raci": "R",
+            "note": "Zero-touch dev env"
+          },
+          {
+            "role": "Academy Leads",
+            "raci": "R",
+            "note": "Technical curriculum"
+          },
+          {
+            "role": "EMs + Buddies",
+            "raci": "R",
+            "note": "Team-specific context"
+          },
+          {
+            "role": "People Ops",
+            "raci": "C",
+            "note": "Logistics"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Dev env SLO",
+            "why": "SLO framing forces platform to treat onboarding as production"
+          },
+          {
+            "name": "Day 90 ramp score",
+            "why": "Validates the academy model delivers consistent ramp quality"
+          },
+          {
+            "name": "Academy satisfaction",
+            "why": "Unhappy cohorts signal curriculum drift from real work"
+          },
+          {
+            "name": "Buddy NPS",
+            "why": "Buddy quality is the hidden variable in onboarding success"
+          },
+          {
+            "name": "90-day attrition",
+            "why": "At volume, even small early attrition rates compound cost"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Onboarding Product Roadmap",
+            "kind": "framework",
+            "desc": "Treat onboarding as a product"
+          },
+          {
+            "title": "Engineering Academy",
+            "kind": "playbook",
+            "desc": "2-week structured curriculum"
+          },
+          {
+            "title": "Platform Onboarding SLOs",
+            "kind": "policy",
+            "desc": "Provisioning guarantees"
+          },
+          {
+            "title": "Cohort Program Template",
+            "kind": "template",
+            "desc": "Monthly cohort logistics"
+          }
+        ],
+        "dx": "Platform team owns onboarding DevEx as an SLO. Dev env time tracked like uptime.",
+        "avoid": [
+          "No dedicated owner",
+          "Platform ignores new hires",
+          "One-size-fits-all ramp"
+        ]
+      },
+      "enterprise": {
+        "reality": "Global infrastructure. Multi-geo, multi-BU. Onboarding analytics predict retention.",
+        "goals": [
+          {
+            "text": "Global standard with BU/geo customization framework"
+          },
+          {
+            "text": "Onboarding signals predict 1-year retention (80%+ accuracy)"
+          },
+          {
+            "text": "Zero-touch global dev env provisioning < 1 hour"
+          },
+          {
+            "text": "First production deploy within 10 business days"
+          }
+        ],
+        "team": [
+          {
+            "role": "Global Onboarding Lead",
+            "raci": "A",
+            "note": "Standards + analytics"
+          },
+          {
+            "role": "Regional Program Managers",
+            "raci": "R",
+            "note": "Local execution"
+          },
+          {
+            "role": "Platform Engineering (global)",
+            "raci": "R",
+            "note": "Worldwide dev env"
+          },
+          {
+            "role": "BU Engineering Leads",
+            "raci": "C",
+            "note": "Domain content"
+          },
+          {
+            "role": "People Analytics",
+            "raci": "C",
+            "note": "Predictive modeling"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Global dev env SLO",
+            "why": "Global provisioning gaps create unequal engineer experiences"
+          },
+          {
+            "name": "Retention prediction accuracy",
+            "why": "Predicting attrition early enables targeted intervention"
+          },
+          {
+            "name": "Time to first prod deploy",
+            "why": "Production impact speed measures real onboarding effectiveness"
+          },
+          {
+            "name": "Global ramp score",
+            "why": "Consistency across BUs ensures brand promise matches reality"
+          },
+          {
+            "name": "Standard compliance",
+            "why": "Non-compliance fragments the onboarding experience at scale"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Global Onboarding Framework",
+            "kind": "framework",
+            "desc": "Core + customizable modules"
+          },
+          {
+            "title": "Onboarding Analytics",
+            "kind": "toolkit",
+            "desc": "Predictive + diagnostic"
+          },
+          {
+            "title": "Multi-Geo Provisioning SLA",
+            "kind": "policy",
+            "desc": "Infra guarantees by region"
+          },
+          {
+            "title": "BU Customization Guide",
+            "kind": "template",
+            "desc": "Tailoring the standard"
+          }
+        ],
+        "dx": "Enterprise IDP provisions everything: repos, CI/CD, monitoring, access — one catalog entry.",
+        "avoid": [
+          "Every BU reinvents onboarding",
+          "No analytics on quality",
+          "Global without local flex"
+        ]
+      }
+    }
+  },
+  {
+    "id": "equip",
+    "num": "04",
+    "label": "Equip",
+    "core": "The tools, platforms, and environments that multiply engineering output",
+    "phases": {
+      "seed": {
+        "reality": "Everyone uses whatever works. One shared staging server. Deploys are manual. It's fine — for now.",
+        "goals": [
+          {
+            "text": "Single-command local dev setup that works on every machine"
+          },
+          {
+            "text": "CI pipeline runs tests on every PR"
+          },
+          {
+            "text": "Shared decisions on core stack documented in ADRs"
+          }
+        ],
+        "team": [
+          {
+            "role": "Founding Engineer(s)",
+            "raci": "A+R",
+            "note": "Owns the toolchain"
+          },
+          {
+            "role": "CTO",
+            "raci": "C",
+            "note": "Stack direction"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Dev env setup time",
+            "why": "Every minute of setup friction slows your tiny team down"
+          },
+          {
+            "name": "CI pass rate",
+            "why": "Flaky CI erodes trust in automation before habits form"
+          },
+          {
+            "name": "Deploy frequency",
+            "why": "Daily deploys prove your toolchain enables rapid iteration"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Dev Setup Script",
+            "kind": "essential",
+            "desc": "One command to rule them all"
+          },
+          {
+            "title": "ADR Template",
+            "kind": "essential",
+            "desc": "Lightweight decision records"
+          }
+        ],
+        "dx": "Your toolchain IS your DevEx. At this stage, the fastest path between idea and production is everything.",
+        "avoid": [
+          "Over-engineering CI/CD",
+          "Microservices before PMF",
+          "Buying enterprise tools for 5 people"
+        ]
+      },
+      "startup": {
+        "reality": "First infrastructure decisions that will last years. Staging environments, observability basics, secrets management.",
+        "goals": [
+          {
+            "text": "Reproducible environments (dev, staging, prod)"
+          },
+          {
+            "text": "Basic observability: logs, errors, uptime"
+          },
+          {
+            "text": "Secrets management — not in env files or repos"
+          },
+          {
+            "text": "Feature flag system for safe rollouts"
+          }
+        ],
+        "team": [
+          {
+            "role": "Senior Engineer (infra-leaning)",
+            "raci": "A+R",
+            "note": "Part-time platform work"
+          },
+          {
+            "role": "Engineering Lead",
+            "raci": "A",
+            "note": "Standards decisions"
+          },
+          {
+            "role": "All Engineers",
+            "raci": "R",
+            "note": "Own their service's config"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Env parity issues / month",
+            "why": "Parity bugs waste hours debugging non-production problems"
+          },
+          {
+            "name": "Observability coverage",
+            "why": "Blind spots in monitoring become outages in production"
+          },
+          {
+            "name": "Secrets in code (scan)",
+            "why": "One leaked secret can compromise your entire infrastructure"
+          },
+          {
+            "name": "Deploy frequency",
+            "why": "Multiple daily deploys prove your infra supports team velocity"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Infrastructure Blueprint",
+            "kind": "artifact",
+            "desc": "Cloud architecture decisions"
+          },
+          {
+            "title": "Observability Stack Guide",
+            "kind": "playbook",
+            "desc": "Logs, metrics, traces setup"
+          },
+          {
+            "title": "Secrets Management Policy",
+            "kind": "policy",
+            "desc": "Where secrets live and rotate"
+          }
+        ],
+        "dx": "Every 'works on my machine' bug is a DevEx failure. Reproducible environments pay for themselves immediately.",
+        "avoid": [
+          "Secrets in repos",
+          "No staging environment",
+          "Alert fatigue from day one"
+        ]
+      },
+      "scaleup": {
+        "reality": "Multiple teams need independent velocity. Platform thinking emerges. Golden paths vs. wild west.",
+        "goals": [
+          {
+            "text": "Golden path: new service from template to production in < 1 day"
+          },
+          {
+            "text": "Centralized CI/CD with team-level customization"
+          },
+          {
+            "text": "Service catalog with ownership, runbooks, SLOs"
+          },
+          {
+            "text": "Cost visibility by team / service"
+          }
+        ],
+        "team": [
+          {
+            "role": "Platform Lead (first hire)",
+            "raci": "A",
+            "note": "Platform as product"
+          },
+          {
+            "role": "Platform Engineers (2-3)",
+            "raci": "R",
+            "note": "Golden paths, templates"
+          },
+          {
+            "role": "SRE / Infra (2-3)",
+            "raci": "R",
+            "note": "Reliability, infra"
+          },
+          {
+            "role": "Team Leads",
+            "raci": "C",
+            "note": "Requirements, adoption"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "New service lead time",
+            "why": "Slow service creation forces teams into shared monoliths"
+          },
+          {
+            "name": "Golden path adoption",
+            "why": "Low adoption means your golden paths miss real team needs"
+          },
+          {
+            "name": "CI/CD pipeline time",
+            "why": "Slow pipelines kill deploy frequency and iteration speed"
+          },
+          {
+            "name": "Service catalog coverage",
+            "why": "Uncatalogued services become orphans nobody can maintain"
+          },
+          {
+            "name": "Infra cost per engineer",
+            "why": "Makes cloud spend visible before it spirals unnoticed"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Service Template (Golden Path)",
+            "kind": "framework",
+            "desc": "Scaffold → CI → Deploy → Monitor"
+          },
+          {
+            "title": "Platform Product Roadmap",
+            "kind": "playbook",
+            "desc": "Internal product strategy"
+          },
+          {
+            "title": "Service Catalog Schema",
+            "kind": "template",
+            "desc": "Ownership, SLOs, runbooks"
+          },
+          {
+            "title": "Cost Allocation Framework",
+            "kind": "toolkit",
+            "desc": "Team-level cloud spend"
+          }
+        ],
+        "dx": "The platform team's customers are the other engineers. Treat golden paths like a product with adoption metrics.",
+        "avoid": [
+          "Mandating tools without DevEx investment",
+          "Platform as gatekeeper",
+          "No service ownership model"
+        ]
+      },
+      "growth": {
+        "reality": "Internal Developer Platform is a first-class product. Multiple teams build on shared foundations. Backstage or equivalent.",
+        "goals": [
+          {
+            "text": "IDP with self-service provisioning, catalog, and docs"
+          },
+          {
+            "text": "Platform NPS > 40 from engineering teams"
+          },
+          {
+            "text": "Automated compliance and security scanning in CI"
+          },
+          {
+            "text": "Cost optimization program saving 15%+ annually"
+          }
+        ],
+        "team": [
+          {
+            "role": "Head of Platform Engineering",
+            "raci": "A",
+            "note": "Platform strategy"
+          },
+          {
+            "role": "Platform Teams (8-12)",
+            "raci": "R",
+            "note": "IDP, CI/CD, infra"
+          },
+          {
+            "role": "SRE Team (5-8)",
+            "raci": "R",
+            "note": "Reliability, incidents"
+          },
+          {
+            "role": "Security Engineering",
+            "raci": "C",
+            "note": "Guardrails, scanning"
+          },
+          {
+            "role": "FinOps",
+            "raci": "C",
+            "note": "Cloud economics"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Platform NPS",
+            "why": "Engineers route around unloved platforms, fragmenting standards"
+          },
+          {
+            "name": "Self-service adoption",
+            "why": "Low self-service means teams still depend on platform tickets"
+          },
+          {
+            "name": "Security scan coverage",
+            "why": "Gaps in scanning are gaps in your security posture"
+          },
+          {
+            "name": "Cost per transaction",
+            "why": "Unit economics reveal if platform scales efficiently"
+          },
+          {
+            "name": "Platform incident rate",
+            "why": "Platform outages multiply across every team that depends on it"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "IDP Product Strategy",
+            "kind": "framework",
+            "desc": "Vision, roadmap, success metrics"
+          },
+          {
+            "title": "Platform SLO Dashboard",
+            "kind": "toolkit",
+            "desc": "Platform reliability tracking"
+          },
+          {
+            "title": "Security Guardrails",
+            "kind": "policy",
+            "desc": "Automated compliance in CI"
+          },
+          {
+            "title": "FinOps Playbook",
+            "kind": "playbook",
+            "desc": "Cost visibility and optimization"
+          }
+        ],
+        "dx": "A mature IDP means engineers think about their domain, not infrastructure. Cognitive load is the metric.",
+        "avoid": [
+          "Platform as ivory tower",
+          "No adoption metrics",
+          "Ignoring cognitive load"
+        ]
+      },
+      "enterprise": {
+        "reality": "Multi-cloud, multi-region, multi-BU. Platform federation. Standards across hundreds of teams.",
+        "goals": [
+          {
+            "text": "Federated platform: global standards, local extensions"
+          },
+          {
+            "text": "< 5 min from code merge to production (p95)"
+          },
+          {
+            "text": "Cross-BU platform reuse > 60%"
+          },
+          {
+            "text": "Platform engineering as a competitive moat"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Platform Engineering",
+            "raci": "A",
+            "note": "Enterprise platform strategy"
+          },
+          {
+            "role": "Platform Org (30+)",
+            "raci": "R",
+            "note": "Federated platform teams"
+          },
+          {
+            "role": "SRE Org (15+)",
+            "raci": "R",
+            "note": "Global reliability"
+          },
+          {
+            "role": "Architecture Board",
+            "raci": "C",
+            "note": "Standards governance"
+          },
+          {
+            "role": "BU Engineering Leads",
+            "raci": "C",
+            "note": "Adoption, requirements"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Merge to production (p95)",
+            "why": "Deployment speed at enterprise proves platform doesn't add drag"
+          },
+          {
+            "name": "Platform reuse across BUs",
+            "why": "Low reuse means BUs rebuild what already exists"
+          },
+          {
+            "name": "Global platform NPS",
+            "why": "Enterprise platforms fail when mandated but unloved"
+          },
+          {
+            "name": "Compliance automation",
+            "why": "Manual compliance gates become the top shipping bottleneck"
+          },
+          {
+            "name": "Infra cost efficiency",
+            "why": "Year-over-year gains justify continued platform investment"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Platform Federation Model",
+            "kind": "framework",
+            "desc": "Global core + BU extensions"
+          },
+          {
+            "title": "Enterprise Tech Radar",
+            "kind": "toolkit",
+            "desc": "Adopt/Trial/Assess/Hold at scale"
+          },
+          {
+            "title": "Multi-Cloud Strategy",
+            "kind": "policy",
+            "desc": "When and why to go multi-cloud"
+          },
+          {
+            "title": "Platform ROI Model",
+            "kind": "template",
+            "desc": "Business case for platform invest"
+          }
+        ],
+        "dx": "At enterprise scale, your IDP competes with public cloud DevEx. Engineers choose your platform because it's genuinely better for their use case.",
+        "avoid": [
+          "One platform fits all BUs",
+          "No federation model",
+          "Platform as cost center narrative"
+        ]
+      }
+    }
+  },
+  {
+    "id": "grow",
+    "num": "05",
+    "label": "Grow",
+    "core": "How engineers develop skills, advance careers, and find meaning",
+    "phases": {
+      "seed": {
+        "reality": "Growth = the company growing. Everyone's learning by building. No ladders, no levels, just shipping.",
+        "goals": [
+          {
+            "text": "Regular 1:1s with founders about growth and direction"
+          },
+          {
+            "text": "Learning budget — even $500/person signals investment"
+          },
+          {
+            "text": "Explicit 'what you'll learn here' pitch for each role"
+          }
+        ],
+        "team": [
+          {
+            "role": "CTO / Founder",
+            "raci": "A+R",
+            "note": "Career conversations"
+          },
+          {
+            "role": "Each Engineer",
+            "raci": "R",
+            "note": "Owns their own growth"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "1:1 frequency",
+            "why": "Inconsistent 1:1s signal founders deprioritize people"
+          },
+          {
+            "name": "Learning budget utilization",
+            "why": "Unused budget means growth is talked about, not acted on"
+          },
+          {
+            "name": "Growth satisfaction",
+            "why": "Early hires leave when they stop learning"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "1:1 Template",
+            "kind": "essential",
+            "desc": "Growth-focused conversation guide"
+          },
+          {
+            "title": "Learning Budget Policy",
+            "kind": "essential",
+            "desc": "Simple spending guidelines"
+          }
+        ],
+        "dx": "Side projects, open-source contributions, and conference talks ARE the growth program at this stage.",
+        "avoid": [
+          "Formal career ladders",
+          "Performance reviews",
+          "Copying Google's leveling system"
+        ]
+      },
+      "startup": {
+        "reality": "First career conversations. Engineers wonder 'what's my path here?' First tech lead promotions.",
+        "goals": [
+          {
+            "text": "Lightweight engineering ladder: IC track (3-4 levels)"
+          },
+          {
+            "text": "First tech lead role defined and filled internally"
+          },
+          {
+            "text": "Semi-annual growth conversations with written takeaways"
+          },
+          {
+            "text": "Conference / course budget actively used"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Lead",
+            "raci": "A",
+            "note": "Ladder design, promotions"
+          },
+          {
+            "role": "Engineering Managers",
+            "raci": "R",
+            "note": "Growth conversations"
+          },
+          {
+            "role": "Senior Engineers",
+            "raci": "C",
+            "note": "Mentoring"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Ladder clarity score",
+            "why": "Ambiguous paths drive engineers to companies with clear ones"
+          },
+          {
+            "name": "Internal promotions",
+            "why": "Visible promotions prove growth is real, not theoretical"
+          },
+          {
+            "name": "Growth conversation cadence",
+            "why": "Without rhythm, career growth becomes an afterthought"
+          },
+          {
+            "name": "Learning budget usage",
+            "why": "Low usage suggests the process is too bureaucratic to access"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Engineering Ladder v1",
+            "kind": "framework",
+            "desc": "IC levels with clear expectations"
+          },
+          {
+            "title": "Tech Lead Role Definition",
+            "kind": "template",
+            "desc": "Scope, expectations, support"
+          },
+          {
+            "title": "Growth Conversation Guide",
+            "kind": "playbook",
+            "desc": "Manager + IC prep template"
+          }
+        ],
+        "dx": "Internal tech talks, code review culture, and pair programming are growth infrastructure disguised as practices.",
+        "avoid": [
+          "No career path visibility",
+          "Only manager track",
+          "Promotions as surprises"
+        ]
+      },
+      "scaleup": {
+        "reality": "Dual-track career paths matter now. IC5/Staff roles needed. First performance calibrations. Mentoring programs.",
+        "goals": [
+          {
+            "text": "Full IC + Management dual-track ladder"
+          },
+          {
+            "text": "Calibration process for fair, consistent leveling"
+          },
+          {
+            "text": "Mentorship program matching senior ↔ junior"
+          },
+          {
+            "text": "Internal mobility: engineers can move teams"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Engineering",
+            "raci": "A",
+            "note": "Ladder strategy"
+          },
+          {
+            "role": "Engineering Managers",
+            "raci": "R",
+            "note": "Growth plans, calibrations"
+          },
+          {
+            "role": "Staff+ Engineers",
+            "raci": "R",
+            "note": "IC track modeling"
+          },
+          {
+            "role": "People Partner",
+            "raci": "C",
+            "note": "Process, comp alignment"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Dual-track clarity",
+            "why": "Engineers leave when the IC path feels second-class"
+          },
+          {
+            "name": "Calibration completion",
+            "why": "Skipped calibrations create inconsistent promotion bars"
+          },
+          {
+            "name": "Mentorship pairs active",
+            "why": "Mentorship accelerates junior growth and senior retention"
+          },
+          {
+            "name": "Internal mobility rate",
+            "why": "Team-hoarding talent leads to attrition, not loyalty"
+          },
+          {
+            "name": "Promo cycle satisfaction",
+            "why": "Frustrating promos erode trust in the entire growth system"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Dual-Track Career Ladder",
+            "kind": "framework",
+            "desc": "IC + Manager paths with parity"
+          },
+          {
+            "title": "Calibration Playbook",
+            "kind": "playbook",
+            "desc": "Process, rubrics, bias checks"
+          },
+          {
+            "title": "Mentorship Program Guide",
+            "kind": "toolkit",
+            "desc": "Matching, structure, outcomes"
+          },
+          {
+            "title": "Internal Mobility Policy",
+            "kind": "policy",
+            "desc": "Team transfer guidelines"
+          }
+        ],
+        "dx": "Engineers who teach — through docs, tooling, or mentoring — should be recognized on the IC track.",
+        "avoid": [
+          "IC track as consolation prize",
+          "No calibration process",
+          "Hoarding talent on teams"
+        ]
+      },
+      "growth": {
+        "reality": "Career development at scale. Engineering academy. Staff+ pipeline. Succession planning begins.",
+        "goals": [
+          {
+            "text": "Staff+ pipeline: identified, sponsored, tracked"
+          },
+          {
+            "text": "Engineering-wide learning platform (internal + external)"
+          },
+          {
+            "text": "Succession plans for all Director+ roles"
+          },
+          {
+            "text": "360 feedback integrated into growth cycles"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Engineering",
+            "raci": "A",
+            "note": "Talent strategy"
+          },
+          {
+            "role": "L&D / Eng Enablement",
+            "raci": "R",
+            "note": "Programs, content"
+          },
+          {
+            "role": "Directors",
+            "raci": "R",
+            "note": "Pipeline, succession"
+          },
+          {
+            "role": "Staff+ Engineers",
+            "raci": "C",
+            "note": "Defining the bar"
+          },
+          {
+            "role": "People Partners",
+            "raci": "C",
+            "note": "Process, equity"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Staff+ pipeline depth",
+            "why": "Thin pipeline forces external hires for senior IC roles"
+          },
+          {
+            "name": "Learning platform engagement",
+            "why": "Unused learning platforms are expensive shelfware"
+          },
+          {
+            "name": "Succession plan coverage",
+            "why": "Ungapped succession prevents leadership vacuum surprises"
+          },
+          {
+            "name": "360 feedback completion",
+            "why": "Incomplete feedback leaves growth plans based on guesswork"
+          },
+          {
+            "name": "Growth satisfaction",
+            "why": "Satisfied engineers stay; dissatisfied ones interview quietly"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Staff+ Development Framework",
+            "kind": "framework",
+            "desc": "Identification, sponsorship, evaluation"
+          },
+          {
+            "title": "Engineering Academy Curriculum",
+            "kind": "playbook",
+            "desc": "Technical + leadership tracks"
+          },
+          {
+            "title": "Succession Planning Template",
+            "kind": "template",
+            "desc": "Dir+ readiness assessment"
+          },
+          {
+            "title": "360 Feedback Guide",
+            "kind": "toolkit",
+            "desc": "Process, questions, action plans"
+          }
+        ],
+        "dx": "Internal platforms that engineers build become Staff+ project vehicles. Growing the IDP grows careers.",
+        "avoid": [
+          "No Staff+ pipeline",
+          "L&D as checkbox",
+          "Succession as secret HR process"
+        ]
+      },
+      "enterprise": {
+        "reality": "Talent as strategic asset. Engineering fellows. Cross-BU rotation programs. Leadership at every level.",
+        "goals": [
+          {
+            "text": "Distinguished / Fellow track with external impact"
+          },
+          {
+            "text": "Cross-BU rotation program with 15%+ participation"
+          },
+          {
+            "text": "Engineering leadership development cohorts (annual)"
+          },
+          {
+            "text": "Skills taxonomy mapped to business capabilities"
+          }
+        ],
+        "team": [
+          {
+            "role": "CTO / SVP Engineering",
+            "raci": "A",
+            "note": "Talent philosophy"
+          },
+          {
+            "role": "Engineering L&D Org",
+            "raci": "R",
+            "note": "Programs at scale"
+          },
+          {
+            "role": "Fellows / Distinguished",
+            "raci": "R",
+            "note": "Technical direction"
+          },
+          {
+            "role": "Talent Management",
+            "raci": "C",
+            "note": "Cross-BU coordination"
+          },
+          {
+            "role": "BU Engineering Heads",
+            "raci": "C",
+            "note": "Local implementation"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Fellow/Distinguished pipeline",
+            "why": "Top ICs leave when there is no apex career destination"
+          },
+          {
+            "name": "Rotation program participation",
+            "why": "Cross-BU movement builds organizational resilience"
+          },
+          {
+            "name": "Leadership cohort satisfaction",
+            "why": "Poor leadership programs produce poor engineering leaders"
+          },
+          {
+            "name": "Skills taxonomy coverage",
+            "why": "Unmapped skills make workforce planning guesswork"
+          },
+          {
+            "name": "Internal promotion rate",
+            "why": "External-heavy fills signal broken internal growth paths"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Fellow Track Definition",
+            "kind": "framework",
+            "desc": "External impact, industry contribution"
+          },
+          {
+            "title": "Rotation Program Playbook",
+            "kind": "playbook",
+            "desc": "Cross-BU engineering mobility"
+          },
+          {
+            "title": "Leadership Development Cohort",
+            "kind": "toolkit",
+            "desc": "Annual program design"
+          },
+          {
+            "title": "Skills Taxonomy",
+            "kind": "template",
+            "desc": "Org-wide capability mapping"
+          }
+        ],
+        "dx": "Distinguished engineers shape the IDP roadmap. Platform strategy and career growth become inseparable.",
+        "avoid": [
+          "Fellow as honorary title only",
+          "No cross-BU movement",
+          "Leadership development only for managers"
+        ]
+      }
+    }
+  },
+  {
+    "id": "ship",
+    "num": "06",
+    "label": "Ship",
+    "core": "How code moves from idea to production safely and fast",
+    "phases": {
+      "seed": {
+        "reality": "You deploy from a laptop. Main branch is production. Rollbacks are git reverts. It works because you're small.",
+        "goals": [
+          {
+            "text": "Deployments happen at least daily"
+          },
+          {
+            "text": "Basic CI: tests pass before merge"
+          },
+          {
+            "text": "One-click (or one-command) deploy"
+          }
+        ],
+        "team": [
+          {
+            "role": "Every Engineer",
+            "raci": "A+R",
+            "note": "Everyone deploys"
+          },
+          {
+            "role": "CTO",
+            "raci": "C",
+            "note": "Process when needed"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Deploy frequency",
+            "why": "Daily shipping proves your process enables rapid learning"
+          },
+          {
+            "name": "Lead time for changes",
+            "why": "Long lead times mean ideas die waiting in the queue"
+          },
+          {
+            "name": "Change failure rate",
+            "why": "High failure rate erodes confidence in shipping fast"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Deploy Script",
+            "kind": "essential",
+            "desc": "One command to ship"
+          },
+          {
+            "title": "Rollback Procedure",
+            "kind": "essential",
+            "desc": "How to undo a bad deploy"
+          }
+        ],
+        "dx": "If deploying feels scary, something is wrong. Ship small, ship often. Fear of deployment = DevEx debt.",
+        "avoid": [
+          "Manual QA gates",
+          "Deploy ceremonies",
+          "Long-lived feature branches"
+        ]
+      },
+      "startup": {
+        "reality": "First CI/CD pipeline. PR reviews. Staging environment. Feature flags appear. Release cadence matters.",
+        "goals": [
+          {
+            "text": "Automated CI/CD pipeline for all services"
+          },
+          {
+            "text": "PR review turnaround ≤ 4 hours"
+          },
+          {
+            "text": "Feature flags for risky changes"
+          },
+          {
+            "text": "Basic incident response process"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Lead",
+            "raci": "A",
+            "note": "Shipping culture"
+          },
+          {
+            "role": "All Engineers",
+            "raci": "R",
+            "note": "PR reviews, deploys"
+          },
+          {
+            "role": "On-call rotation",
+            "raci": "R",
+            "note": "First responder"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Deploy frequency",
+            "why": "Increasing frequency validates your CI/CD investment"
+          },
+          {
+            "name": "Lead time for changes",
+            "why": "Measures whether new process helps or hinders delivery"
+          },
+          {
+            "name": "PR review turnaround",
+            "why": "Review bottlenecks are the top velocity killer at this stage"
+          },
+          {
+            "name": "Change failure rate",
+            "why": "Tracks if automation catches problems before production"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "CI/CD Pipeline Guide",
+            "kind": "playbook",
+            "desc": "Build, test, deploy automation"
+          },
+          {
+            "title": "Code Review Standards",
+            "kind": "policy",
+            "desc": "What to review, how fast"
+          },
+          {
+            "title": "Incident Response Runbook",
+            "kind": "template",
+            "desc": "Detect → Respond → Recover"
+          }
+        ],
+        "dx": "PR review speed is the single biggest shipping bottleneck at this stage. Measure and optimize it.",
+        "avoid": [
+          "Gatekeeping deploys to one person",
+          "No staging environment",
+          "Ignoring DORA metrics"
+        ]
+      },
+      "scaleup": {
+        "reality": "Multiple teams shipping independently. DORA metrics tracked. Deployment pipelines are team-owned. Incident management formalizes.",
+        "goals": [
+          {
+            "text": "DORA metrics tracked and reviewed monthly"
+          },
+          {
+            "text": "Team-owned deployment pipelines (not centralized gate)"
+          },
+          {
+            "text": "Structured incident management with blameless post-mortems"
+          },
+          {
+            "text": "Progressive delivery: canary, blue-green, or ring deploys"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Managers",
+            "raci": "A",
+            "note": "Team delivery health"
+          },
+          {
+            "role": "Platform Engineers",
+            "raci": "R",
+            "note": "Pipeline infrastructure"
+          },
+          {
+            "role": "SRE (first hires)",
+            "raci": "R",
+            "note": "Reliability, incidents"
+          },
+          {
+            "role": "Team Leads",
+            "raci": "R",
+            "note": "Delivery cadence"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Deploy frequency",
+            "why": "On-demand deploys prove teams own their own release cadence"
+          },
+          {
+            "name": "Lead time",
+            "why": "Short lead time at scale proves decoupled team delivery"
+          },
+          {
+            "name": "Change failure rate",
+            "why": "Low rate validates progressive delivery strategies work"
+          },
+          {
+            "name": "MTTR",
+            "why": "Recovery speed matters more than preventing every failure"
+          },
+          {
+            "name": "Post-mortem completion",
+            "why": "Skipped post-mortems repeat the same incidents"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "DORA Metrics Dashboard",
+            "kind": "toolkit",
+            "desc": "Four key metrics, per team"
+          },
+          {
+            "title": "Progressive Delivery Guide",
+            "kind": "framework",
+            "desc": "Canary, flag, ring strategies"
+          },
+          {
+            "title": "Incident Management Playbook",
+            "kind": "playbook",
+            "desc": "Severity, response, post-mortem"
+          },
+          {
+            "title": "Post-Mortem Template",
+            "kind": "template",
+            "desc": "Blameless analysis format"
+          }
+        ],
+        "dx": "Developer experience IS delivery performance. If the inner loop is slow, DORA metrics will show it.",
+        "avoid": [
+          "Centralized deploy approvals",
+          "No DORA tracking",
+          "Blame culture around incidents"
+        ]
+      },
+      "growth": {
+        "reality": "Shipping at scale. Release engineering team. Feature management platform. SLO-driven reliability.",
+        "goals": [
+          {
+            "text": "SLO-driven reliability: every service has error budgets"
+          },
+          {
+            "text": "Elite DORA performance (per team)"
+          },
+          {
+            "text": "Automated rollback on SLO breach"
+          },
+          {
+            "text": "Release engineering as a discipline"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Engineering",
+            "raci": "A",
+            "note": "Delivery culture"
+          },
+          {
+            "role": "Release Engineering",
+            "raci": "R",
+            "note": "Release infrastructure"
+          },
+          {
+            "role": "SRE Teams (5-8)",
+            "raci": "R",
+            "note": "SLOs, error budgets"
+          },
+          {
+            "role": "Engineering Managers",
+            "raci": "R",
+            "note": "Team DORA ownership"
+          },
+          {
+            "role": "Product Partners",
+            "raci": "C",
+            "note": "Feature management"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "DORA: Elite teams",
+            "why": "Elite DORA is the benchmark for world-class delivery orgs"
+          },
+          {
+            "name": "SLO coverage",
+            "why": "Services without SLOs have no shared definition of healthy"
+          },
+          {
+            "name": "Error budget utilization",
+            "why": "Connects reliability investment directly to shipping speed"
+          },
+          {
+            "name": "Automated rollback rate",
+            "why": "Manual rollbacks at scale add minutes that cost revenue"
+          },
+          {
+            "name": "Release incident rate",
+            "why": "Release-caused incidents undermine confidence in shipping"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "SLO Framework",
+            "kind": "framework",
+            "desc": "Define, measure, enforce SLOs"
+          },
+          {
+            "title": "Error Budget Policy",
+            "kind": "policy",
+            "desc": "What happens when budget burns"
+          },
+          {
+            "title": "Release Engineering Handbook",
+            "kind": "playbook",
+            "desc": "Release process at scale"
+          },
+          {
+            "title": "DORA Improvement Playbook",
+            "kind": "toolkit",
+            "desc": "Team-level DORA coaching"
+          }
+        ],
+        "dx": "Error budgets connect reliability to velocity. When the budget's healthy, ship fast. When it's burning, slow down and fix.",
+        "avoid": [
+          "Reliability without error budgets",
+          "No release engineering",
+          "DORA as punishment metric"
+        ]
+      },
+      "enterprise": {
+        "reality": "Global delivery. Regulatory gates. Multi-region deployments. Supply chain security. Compliance as code.",
+        "goals": [
+          {
+            "text": "Compliance-as-code: regulatory gates automated in CI"
+          },
+          {
+            "text": "Global deployment: multi-region with < 5 min rollout"
+          },
+          {
+            "text": "Software supply chain security (SBOM, signing)"
+          },
+          {
+            "text": "Chaos engineering program"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP / SVP Delivery",
+            "raci": "A",
+            "note": "Global delivery strategy"
+          },
+          {
+            "role": "Release Engineering Org",
+            "raci": "R",
+            "note": "Global release infra"
+          },
+          {
+            "role": "SRE Org (15+)",
+            "raci": "R",
+            "note": "Global reliability"
+          },
+          {
+            "role": "Security Engineering",
+            "raci": "R",
+            "note": "Supply chain, compliance"
+          },
+          {
+            "role": "Compliance / Legal",
+            "raci": "C",
+            "note": "Regulatory requirements"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Global deploy time",
+            "why": "Slow global deploys create pressure to batch risky changes"
+          },
+          {
+            "name": "Compliance automation",
+            "why": "Manual compliance is the enterprise tax on engineering velocity"
+          },
+          {
+            "name": "SBOM coverage",
+            "why": "Supply chain attacks exploit exactly the gaps you haven't mapped"
+          },
+          {
+            "name": "Chaos experiment frequency",
+            "why": "Regular chaos builds resilience before real failures test it"
+          },
+          {
+            "name": "Global MTTR",
+            "why": "Enterprise recovery speed directly correlates with revenue impact"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Compliance-as-Code Framework",
+            "kind": "framework",
+            "desc": "Automated regulatory gates"
+          },
+          {
+            "title": "Supply Chain Security Policy",
+            "kind": "policy",
+            "desc": "SBOM, signing, provenance"
+          },
+          {
+            "title": "Global Deployment Playbook",
+            "kind": "playbook",
+            "desc": "Multi-region rollout strategy"
+          },
+          {
+            "title": "Chaos Engineering Program",
+            "kind": "toolkit",
+            "desc": "GameDay, steady state, experiments"
+          }
+        ],
+        "dx": "At enterprise scale, compliance gates must be invisible to developers — baked into the platform, not bolted on.",
+        "avoid": [
+          "Manual compliance gates",
+          "No supply chain security",
+          "Chaos as afterthought"
+        ]
+      }
+    }
+  },
+  {
+    "id": "thrive",
+    "num": "07",
+    "label": "Thrive",
+    "core": "How you keep engineers engaged, healthy, and choosing to stay",
+    "phases": {
+      "seed": {
+        "reality": "Retention = excitement. Everyone's bought in. But burnout risk is real when you're sprinting 24/7.",
+        "goals": [
+          {
+            "text": "Sustainable pace: no glorification of overwork"
+          },
+          {
+            "text": "Weekly or biweekly check-ins on energy and workload"
+          },
+          {
+            "text": "Equity and comp conversations are transparent"
+          }
+        ],
+        "team": [
+          {
+            "role": "CTO / Founder",
+            "raci": "A+R",
+            "note": "Sets the pace and culture"
+          },
+          {
+            "role": "Each Engineer",
+            "raci": "R",
+            "note": "Speaks up about burnout"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Team energy (self-report)",
+            "why": "Low energy is the earliest signal of unsustainable pace"
+          },
+          {
+            "name": "Working hours/week",
+            "why": "Chronic overwork predicts burnout and eventual departures"
+          },
+          {
+            "name": "Zero attrition",
+            "why": "Any voluntary exit at seed stage is an existential risk"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Working Norms",
+            "kind": "essential",
+            "desc": "Hours, async, on-call expectations"
+          },
+          {
+            "title": "Equity Explainer",
+            "kind": "essential",
+            "desc": "How equity works, simply explained"
+          }
+        ],
+        "dx": "Deploy frequency drops when people burn out. DevEx metrics are retention leading indicators.",
+        "avoid": [
+          "Hustle culture as identity",
+          "Vague equity promises",
+          "No vacation norms"
+        ]
+      },
+      "startup": {
+        "reality": "First attrition stings. Engagement survey appears. Benefits start mattering. Culture is tested under pressure.",
+        "goals": [
+          {
+            "text": "Quarterly pulse survey with action commitments"
+          },
+          {
+            "text": "Competitive benefits package (health, learning, flexibility)"
+          },
+          {
+            "text": "Retention conversations with flight-risk engineers"
+          },
+          {
+            "text": "Team events and rituals that aren't forced"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Lead",
+            "raci": "A",
+            "note": "Team health owner"
+          },
+          {
+            "role": "Engineering Managers",
+            "raci": "R",
+            "note": "1:1s, pulse actions"
+          },
+          {
+            "role": "People Ops",
+            "raci": "R",
+            "note": "Benefits, surveys"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Engagement score",
+            "why": "Engagement drops before attrition spikes, giving you lead time"
+          },
+          {
+            "name": "Voluntary attrition",
+            "why": "First departures set a precedent and signal cultural cracks"
+          },
+          {
+            "name": "Pulse survey response rate",
+            "why": "Low response means people don't trust surveys lead to change"
+          },
+          {
+            "name": "Manager 1:1 consistency",
+            "why": "Skipped 1:1s are the most common disengagement accelerator"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Pulse Survey Template",
+            "kind": "template",
+            "desc": "5 questions, quarterly"
+          },
+          {
+            "title": "Benefits Overview",
+            "kind": "artifact",
+            "desc": "Total comp clarity"
+          },
+          {
+            "title": "Stay Interview Guide",
+            "kind": "playbook",
+            "desc": "Proactive retention conversations"
+          }
+        ],
+        "dx": "Track developer satisfaction alongside velocity. Teams with poor DevEx have higher attrition.",
+        "avoid": [
+          "Survey without follow-through",
+          "Ignoring first departures",
+          "Benefits as afterthought"
+        ]
+      },
+      "scaleup": {
+        "reality": "Attrition becomes a number to manage. DEI matters. Manager quality drives retention. Burnout risk increases with scale.",
+        "goals": [
+          {
+            "text": "Manager effectiveness program: all EMs trained"
+          },
+          {
+            "text": "DEI goals with measurable targets"
+          },
+          {
+            "text": "Burnout detection framework (signals, interventions)"
+          },
+          {
+            "text": "Total rewards philosophy: comp + equity + benefits + growth"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Engineering",
+            "raci": "A",
+            "note": "Retention strategy"
+          },
+          {
+            "role": "Engineering Managers",
+            "raci": "R",
+            "note": "Team health, engagement"
+          },
+          {
+            "role": "People Partners",
+            "raci": "R",
+            "note": "Programs, analytics"
+          },
+          {
+            "role": "DEI Lead",
+            "raci": "R",
+            "note": "Inclusion programs"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Voluntary attrition",
+            "why": "At scale, attrition rate directly impacts delivery capacity"
+          },
+          {
+            "name": "Manager effectiveness",
+            "why": "People leave managers, not companies, especially at scale"
+          },
+          {
+            "name": "DEI representation",
+            "why": "Representation gaps widen without active measurement"
+          },
+          {
+            "name": "Engagement score",
+            "why": "Tracks whether growth is energizing or exhausting the team"
+          },
+          {
+            "name": "Regrettable attrition",
+            "why": "Losing top performers costs 2x their salary to replace"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Manager Effectiveness Program",
+            "kind": "framework",
+            "desc": "Training, coaching, measurement"
+          },
+          {
+            "title": "DEI Strategy & Targets",
+            "kind": "policy",
+            "desc": "Representation, inclusion, equity"
+          },
+          {
+            "title": "Burnout Detection Guide",
+            "kind": "toolkit",
+            "desc": "Signals, conversations, interventions"
+          },
+          {
+            "title": "Total Rewards Philosophy",
+            "kind": "playbook",
+            "desc": "Holistic compensation strategy"
+          }
+        ],
+        "dx": "SPACE framework: Satisfaction alongside Productivity. Measure both. Optimize for sustainable performance.",
+        "avoid": [
+          "Treating attrition as inevitable",
+          "DEI as checkbox",
+          "Ignoring manager quality"
+        ]
+      },
+      "growth": {
+        "reality": "Engagement at scale. People analytics team. Predictive attrition models. Culture as a product.",
+        "goals": [
+          {
+            "text": "Predictive attrition model identifies flight risk 90 days out"
+          },
+          {
+            "text": "Engineering culture score tracked and improved quarterly"
+          },
+          {
+            "text": "Flexible work policy that actually works"
+          },
+          {
+            "text": "Wellbeing program: mental health, ergonomics, sabbaticals"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Engineering",
+            "raci": "A",
+            "note": "Culture strategy"
+          },
+          {
+            "role": "People Analytics",
+            "raci": "R",
+            "note": "Predictive models"
+          },
+          {
+            "role": "L&D / Culture Team",
+            "raci": "R",
+            "note": "Programs, events"
+          },
+          {
+            "role": "Engineering Managers",
+            "raci": "R",
+            "note": "Team-level engagement"
+          },
+          {
+            "role": "Wellbeing Program Lead",
+            "raci": "R",
+            "note": "Mental health, balance"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Attrition prediction accuracy",
+            "why": "Accurate prediction enables proactive, not reactive, retention"
+          },
+          {
+            "name": "Culture score",
+            "why": "Culture left unmeasured drifts from intention to accident"
+          },
+          {
+            "name": "Regrettable attrition",
+            "why": "Distinguishes healthy turnover from talent hemorrhaging"
+          },
+          {
+            "name": "Wellbeing NPS",
+            "why": "Wellbeing programs only matter if engineers actually value them"
+          },
+          {
+            "name": "Flexible work satisfaction",
+            "why": "Flexibility policy gaps drive attrition to remote-friendly competitors"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Attrition Prediction Model",
+            "kind": "toolkit",
+            "desc": "Signals, model, intervention triggers"
+          },
+          {
+            "title": "Culture Measurement Framework",
+            "kind": "framework",
+            "desc": "Define, measure, improve culture"
+          },
+          {
+            "title": "Flexible Work Policy",
+            "kind": "policy",
+            "desc": "Remote, hybrid, async norms"
+          },
+          {
+            "title": "Wellbeing Program Guide",
+            "kind": "playbook",
+            "desc": "Mental health, sabbaticals, ergonomics"
+          }
+        ],
+        "dx": "Developer experience surveys become part of the culture measurement framework. Happy devs = retained devs.",
+        "avoid": [
+          "Analytics without action",
+          "Culture as slogans",
+          "Wellbeing as perk not strategy"
+        ]
+      },
+      "enterprise": {
+        "reality": "Global workforce. Multi-generational. Union considerations in some geos. Culture across acquisitions.",
+        "goals": [
+          {
+            "text": "Global engagement strategy with local adaptation"
+          },
+          {
+            "text": "Post-acquisition culture integration playbook"
+          },
+          {
+            "text": "Multi-generational workforce strategy"
+          },
+          {
+            "text": "Alumni network as strategic asset"
+          }
+        ],
+        "team": [
+          {
+            "role": "CHRO / SVP People",
+            "raci": "A",
+            "note": "Global people strategy"
+          },
+          {
+            "role": "Regional People Leads",
+            "raci": "R",
+            "note": "Local execution"
+          },
+          {
+            "role": "People Analytics Org",
+            "raci": "R",
+            "note": "Global insights"
+          },
+          {
+            "role": "M&A Integration",
+            "raci": "R",
+            "note": "Culture merging"
+          },
+          {
+            "role": "Employee Relations",
+            "raci": "C",
+            "note": "Legal, unions"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Global engagement",
+            "why": "Engagement variance across regions reveals systemic inequity"
+          },
+          {
+            "name": "Acquisition retention (1yr)",
+            "why": "Failed retention post-acquisition destroys deal value"
+          },
+          {
+            "name": "Regional engagement parity",
+            "why": "Parity gaps expose HQ-centric culture blind spots"
+          },
+          {
+            "name": "Alumni engagement rate",
+            "why": "Active alumni become referrers, customers, and boomerang hires"
+          },
+          {
+            "name": "Regrettable attrition",
+            "why": "At enterprise scale, even small percentage points are hundreds of people"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Global Engagement Framework",
+            "kind": "framework",
+            "desc": "Core + regional adaptation"
+          },
+          {
+            "title": "M&A Culture Integration",
+            "kind": "playbook",
+            "desc": "100-day culture merge plan"
+          },
+          {
+            "title": "Alumni Network Program",
+            "kind": "toolkit",
+            "desc": "Boomerang hires, referrals"
+          },
+          {
+            "title": "Workforce Strategy",
+            "kind": "policy",
+            "desc": "Multi-gen, multi-geo planning"
+          }
+        ],
+        "dx": "At forest scale, culture is fractal. Each team has its own microculture within the global framework.",
+        "avoid": [
+          "One culture fits all geos",
+          "Ignoring acquired team culture",
+          "Alumni as afterthought"
+        ]
+      }
+    }
+  },
+  {
+    "id": "evolve",
+    "num": "08",
+    "label": "Evolve",
+    "core": "How engineers transition out gracefully and become alumni advocates",
+    "phases": {
+      "seed": {
+        "reality": "Every departure feels personal. There's no process. You buy them a drink and wish them well.",
+        "goals": [
+          {
+            "text": "Honest exit conversation with founder"
+          },
+          {
+            "text": "Clean offboarding: access revoked, knowledge transferred"
+          },
+          {
+            "text": "Part on good terms — every leaver is a future referrer"
+          }
+        ],
+        "team": [
+          {
+            "role": "CTO / Founder",
+            "raci": "A+R",
+            "note": "Exit conversation"
+          },
+          {
+            "role": "Remaining team",
+            "raci": "R",
+            "note": "Knowledge capture"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Knowledge transfer completion",
+            "why": "Incomplete transfers create knowledge voids in a tiny team"
+          },
+          {
+            "name": "Access revocation time",
+            "why": "Lingering access is a security risk you can't afford"
+          },
+          {
+            "name": "Exit sentiment",
+            "why": "Every leaver becomes a recruiter or a warning for others"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Offboarding Checklist",
+            "kind": "essential",
+            "desc": "Access, handoff, farewell"
+          },
+          {
+            "title": "Exit Conversation Guide",
+            "kind": "essential",
+            "desc": "Learn why they're leaving"
+          }
+        ],
+        "dx": "Document as you go. If one person's departure causes chaos, your bus factor is too low.",
+        "avoid": [
+          "Taking it personally",
+          "No knowledge transfer",
+          "Burning bridges"
+        ]
+      },
+      "startup": {
+        "reality": "First structured offboarding. Exit interviews start. Alumni Slack channel appears. Knowledge gaps after departures expose documentation debt.",
+        "goals": [
+          {
+            "text": "Structured exit interview process with themes tracked"
+          },
+          {
+            "text": "30-day knowledge transfer plan for every departure"
+          },
+          {
+            "text": "Alumni network: Slack/LinkedIn group for former engineers"
+          },
+          {
+            "text": "Automated access revocation on last day"
+          }
+        ],
+        "team": [
+          {
+            "role": "Engineering Manager",
+            "raci": "A",
+            "note": "Transition plan"
+          },
+          {
+            "role": "People Ops",
+            "raci": "R",
+            "note": "Exit interviews, logistics"
+          },
+          {
+            "role": "Team Lead",
+            "raci": "R",
+            "note": "Knowledge transfer"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Exit interview completion",
+            "why": "Missing exit data means you repeat the same retention mistakes"
+          },
+          {
+            "name": "Knowledge transfer score",
+            "why": "Quality of handoff determines team disruption after departure"
+          },
+          {
+            "name": "Access revocation (auto)",
+            "why": "Manual revocation at scale guarantees security gaps"
+          },
+          {
+            "name": "Alumni channel join rate",
+            "why": "High join rate signals people leave the role, not the community"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Exit Interview Template",
+            "kind": "template",
+            "desc": "Structured questions, theme tracking"
+          },
+          {
+            "title": "Knowledge Transfer Plan",
+            "kind": "playbook",
+            "desc": "30-day handoff structure"
+          },
+          {
+            "title": "Offboarding Automation",
+            "kind": "toolkit",
+            "desc": "Access revocation checklist"
+          }
+        ],
+        "dx": "Every departure that causes a knowledge gap is a documentation failure. Use departures to improve docs.",
+        "avoid": [
+          "No exit interviews",
+          "Manual access revocation",
+          "Ignoring departure patterns"
+        ]
+      },
+      "scaleup": {
+        "reality": "Attrition data becomes actionable. Exit themes drive org changes. Boomerang hires start happening. Offboarding is systematic.",
+        "goals": [
+          {
+            "text": "Exit theme analysis drives quarterly action items"
+          },
+          {
+            "text": "Boomerang hire program: former engineers return"
+          },
+          {
+            "text": "Automated offboarding across all systems (< 1 day)"
+          },
+          {
+            "text": "Internal mobility as alternative to departure"
+          }
+        ],
+        "team": [
+          {
+            "role": "VP Engineering",
+            "raci": "A",
+            "note": "Acts on exit data"
+          },
+          {
+            "role": "People Analytics",
+            "raci": "R",
+            "note": "Exit theme analysis"
+          },
+          {
+            "role": "Engineering Managers",
+            "raci": "R",
+            "note": "Transition execution"
+          },
+          {
+            "role": "IT / Security",
+            "raci": "R",
+            "note": "Automated offboarding"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Exit themes → actions",
+            "why": "Themes without actions make exit interviews performative"
+          },
+          {
+            "name": "Boomerang hire rate",
+            "why": "Returning engineers validate your culture and skip ramp time"
+          },
+          {
+            "name": "Offboarding automation",
+            "why": "Manual offboarding at scale creates compliance and security holes"
+          },
+          {
+            "name": "Internal transfer saves",
+            "why": "Every internal save avoids a costly external replacement cycle"
+          },
+          {
+            "name": "Avg knowledge transfer score",
+            "why": "Consistent handoff quality prevents post-departure fire drills"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Exit Analytics Dashboard",
+            "kind": "toolkit",
+            "desc": "Theme trends, action tracking"
+          },
+          {
+            "title": "Boomerang Hire Program",
+            "kind": "playbook",
+            "desc": "Stay connected, fast-track return"
+          },
+          {
+            "title": "Automated Offboarding",
+            "kind": "framework",
+            "desc": "System-by-system revocation"
+          },
+          {
+            "title": "Internal Mobility Playbook",
+            "kind": "playbook",
+            "desc": "Retain via team transfer"
+          }
+        ],
+        "dx": "Offboarding should be as smooth as onboarding. Both are DevEx moments that define your reputation.",
+        "avoid": [
+          "Ignoring exit data",
+          "No boomerang pathway",
+          "Manual offboarding at scale"
+        ]
+      },
+      "growth": {
+        "reality": "Offboarding is a product. Alumni network drives referrals. Exit data informs org strategy. Transitions are dignified.",
+        "goals": [
+          {
+            "text": "Alumni referral program generating 10%+ of pipeline"
+          },
+          {
+            "text": "Exit data integrated into retention strategy"
+          },
+          {
+            "text": "Graceful layoff/RIF process (if needed) with support"
+          },
+          {
+            "text": "Alumni events: annual reunion, ongoing community"
+          }
+        ],
+        "team": [
+          {
+            "role": "People Ops Lead",
+            "raci": "A",
+            "note": "Offboarding program owner"
+          },
+          {
+            "role": "Alumni Program Manager",
+            "raci": "R",
+            "note": "Network, events"
+          },
+          {
+            "role": "People Analytics",
+            "raci": "R",
+            "note": "Exit → retention insights"
+          },
+          {
+            "role": "Engineering Managers",
+            "raci": "R",
+            "note": "Transition quality"
+          },
+          {
+            "role": "Legal",
+            "raci": "C",
+            "note": "Compliance, severance"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Alumni referral pipeline",
+            "why": "Alumni who refer prove the experience was worth recommending"
+          },
+          {
+            "name": "Exit → retention actions",
+            "why": "Closing the exit-to-action loop makes departures drive improvement"
+          },
+          {
+            "name": "Alumni event attendance",
+            "why": "Attendance measures whether your alumni network has real gravity"
+          },
+          {
+            "name": "Offboarding NPS",
+            "why": "Bad offboarding taints the entire tenure in retrospect"
+          },
+          {
+            "name": "Glassdoor exit rating",
+            "why": "Exit reviews are the most-read and most-trusted by candidates"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Alumni Engagement Program",
+            "kind": "framework",
+            "desc": "Events, referrals, community"
+          },
+          {
+            "title": "Exit → Retention Analytics",
+            "kind": "toolkit",
+            "desc": "Predictive insights from departures"
+          },
+          {
+            "title": "RIF/Layoff Playbook",
+            "kind": "policy",
+            "desc": "Dignity-first workforce reduction"
+          },
+          {
+            "title": "Alumni Referral Program",
+            "kind": "playbook",
+            "desc": "Incentives and fast-tracking"
+          }
+        ],
+        "dx": "Your public IDP and eng blog keep alumni connected to your engineering culture even after they leave.",
+        "avoid": [
+          "Treating alumni as gone",
+          "No exit → retention feedback loop",
+          "Layoffs without dignity"
+        ]
+      },
+      "enterprise": {
+        "reality": "Global offboarding compliance. Strategic workforce planning. Alumni as ecosystem. Transitions across BUs before external exit.",
+        "goals": [
+          {
+            "text": "Global offboarding compliance across all jurisdictions"
+          },
+          {
+            "text": "Alumni ecosystem: advisory, investing, referrals, re-hires"
+          },
+          {
+            "text": "Strategic workforce planning: predict and shape attrition"
+          },
+          {
+            "text": "Cross-BU transfer program reduces external attrition by 15%+"
+          }
+        ],
+        "team": [
+          {
+            "role": "CHRO / SVP People",
+            "raci": "A",
+            "note": "Global workforce strategy"
+          },
+          {
+            "role": "Global Alumni Relations",
+            "raci": "R",
+            "note": "Ecosystem management"
+          },
+          {
+            "role": "Workforce Planning",
+            "raci": "R",
+            "note": "Predictive modeling"
+          },
+          {
+            "role": "Regional HR / Legal",
+            "raci": "R",
+            "note": "Compliance, labor law"
+          },
+          {
+            "role": "BU Engineering Heads",
+            "raci": "C",
+            "note": "Cross-BU transfers"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Global compliance",
+            "why": "Non-compliance in any jurisdiction creates enterprise-wide liability"
+          },
+          {
+            "name": "Alumni ecosystem value",
+            "why": "Unmeasured alumni programs can't justify continued investment"
+          },
+          {
+            "name": "Workforce plan accuracy",
+            "why": "Planning accuracy enables proactive rather than reactive hiring"
+          },
+          {
+            "name": "Cross-BU transfer rate",
+            "why": "Internal transfers preserve institutional knowledge others lose"
+          },
+          {
+            "name": "Boomerang rate",
+            "why": "High boomerang rate is the ultimate employer brand proof point"
+          }
+        ],
+        "artifacts": [
+          {
+            "title": "Global Offboarding Compliance",
+            "kind": "framework",
+            "desc": "Multi-jurisdiction requirements"
+          },
+          {
+            "title": "Alumni Ecosystem Strategy",
+            "kind": "playbook",
+            "desc": "Advisory, invest, refer, rehire"
+          },
+          {
+            "title": "Workforce Planning Model",
+            "kind": "toolkit",
+            "desc": "Predict, shape, respond"
+          },
+          {
+            "title": "Cross-BU Transfer Program",
+            "kind": "policy",
+            "desc": "Internal before external"
+          }
+        ],
+        "dx": "Enterprise alumni often become customers, partners, or investors. The developer lifecycle extends beyond employment.",
+        "avoid": [
+          "Compliance gaps across geos",
+          "No alumni strategy",
+          "Workforce planning as headcount only"
+        ]
+      }
+    }
+  }
+]
