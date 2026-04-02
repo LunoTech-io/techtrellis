@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { StageIcon } from "./icons/StageIcons.jsx";
+import { fetchMeta, fetchAllContent } from "./src/api.js";
 
 /*
  * TechTrellis — techtrellis.dev
@@ -1209,18 +1210,51 @@ const NAV_ALL = [
 const KIND = { essential: { l: "Essential", c: "#E07A3A" }, playbook: { l: "Playbook", c: "#5AA8D5" }, framework: { l: "Framework", c: "#5DAE72" }, toolkit: { l: "Toolkit", c: "#B08AD6" }, template: { l: "Template", c: "#7BC67E" }, artifact: { l: "Artifact", c: "#D4A843" }, policy: { l: "Policy", c: "#D47B8A" } };
 const RC = { A: "#E07A3A", R: "#5DAE72", C: "#B08AD6", I: "#8A8878" };
 
+// Build fallback content lookup from hardcoded LATTICE
+const FALLBACK_CONTENT = {};
+for (const stage of LATTICE) {
+  for (const [phaseId, data] of Object.entries(stage.phases)) {
+    FALLBACK_CONTENT[`${stage.id}.${phaseId}`] = data;
+  }
+}
+
 export default function TechTrellis() {
   const [phase, setPhase] = useState("scaleup");
   const [stageId, setStageId] = useState("attract");
   const [tab, setTab] = useState("overview");
   const [ready, setReady] = useState(false);
+  const [showInfo, setShowInfo] = useState(false);
+
+  // API data state (falls back to hardcoded constants)
+  const [growthPhases, setGrowthPhases] = useState(GROWTH_PHASES);
+  const [stages, setStages] = useState(NAV_ALL);
+  const [stageMap, setStageMap] = useState(Object.fromEntries(LATTICE.map(s => [s.id, s])));
+  const [content, setContent] = useState(FALLBACK_CONTENT);
+  const [artifactKinds, setArtifactKinds] = useState(KIND);
+  const [raciTypes, setRaciTypes] = useState(RC);
 
   useEffect(() => { setReady(true); }, []);
   useEffect(() => { setTab("overview"); }, [phase, stageId]);
 
-  const lattice = LATTICE.find(l => l.id === stageId);
-  const data = lattice?.phases[phase];
-  const gp = GROWTH_PHASES.find(g => g.id === phase);
+  // Fetch from API on mount, silently fall back to hardcoded data on failure
+  useEffect(() => {
+    Promise.all([fetchMeta(), fetchAllContent()])
+      .then(([meta, contentData]) => {
+        setGrowthPhases(meta.growthPhases);
+        setStages(meta.stages);
+        setStageMap(Object.fromEntries(meta.stages.map(s => [s.id, s])));
+        setArtifactKinds(meta.artifactKinds);
+        setRaciTypes(meta.raciTypes);
+        setContent(contentData);
+      })
+      .catch(() => {
+        // Silently use hardcoded fallback
+      });
+  }, []);
+
+  const lattice = stageMap[stageId];
+  const data = content[`${stageId}.${phase}`];
+  const gp = growthPhases.find(g => g.id === phase);
   if (!lattice || !data) return null;
 
   return (
@@ -1234,6 +1268,8 @@ export default function TechTrellis() {
         @keyframes grow{from{opacity:0}to{opacity:1}}
         .g{animation:grow .3s ease both}
 
+        .tt-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}
+        .tt-modal{background:#131A14;border:1px solid #1E2820;border-radius:12px;max-width:540px;width:100%;padding:28px 32px;position:relative;max-height:90vh;overflow-y:auto}
         .tt-root{max-width:1200px;margin:0 auto;padding:0 32px}
         .tt-header{padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
         .tt-header-badge{display:block}
@@ -1282,6 +1318,43 @@ export default function TechTrellis() {
         }
       `}</style>
 
+      {/* ── Info Modal ── */}
+      {showInfo && (
+        <div className="tt-overlay" onClick={() => setShowInfo(false)}>
+          <div className="tt-modal" onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowInfo(false)} style={{
+              position: "absolute", top: 14, right: 14, background: "transparent", border: "none",
+              color: "#8A9A88", fontSize: 18, cursor: "pointer", lineHeight: 1,
+            }}>×</button>
+            <h2 style={{ fontSize: 20, fontWeight: 800, color: "#E4E2DA", marginBottom: 6, letterSpacing: "-0.02em" }}>
+              <span style={{ color: "#5DAE72" }}>Tech</span>Trellis
+            </h2>
+            <p style={{ fontSize: 13, color: "#8A9A88", fontFamily: "'IBM Plex Mono', monospace", marginBottom: 16 }}>
+              The support structure for engineering growth
+            </p>
+            <div style={{ fontSize: 14, color: "#CCC8BE", lineHeight: 1.7 }}>
+              <p style={{ marginBottom: 12 }}>
+                TechTrellis is a reference catalog for engineering leaders — like Reforge, but for the full developer lifecycle. It helps CTOs, VPs of Engineering, and engineering managers navigate the challenges of building and scaling engineering organizations.
+              </p>
+              <p style={{ marginBottom: 12 }}>
+                Choose your <strong style={{ color: "#E4E2DA" }}>growth phase</strong> (from a 5-person startup to a 1,000+ enterprise) and explore each stage of the engineering lifecycle:
+              </p>
+              <ul style={{ paddingLeft: 20, marginBottom: 12 }}>
+                <li style={{ marginBottom: 4 }}><strong style={{ color: "#E4E2DA" }}>Goals</strong> — what good looks like at your stage</li>
+                <li style={{ marginBottom: 4 }}><strong style={{ color: "#E4E2DA" }}>Recommended KPIs</strong> — what to measure and why</li>
+                <li style={{ marginBottom: 4 }}><strong style={{ color: "#E4E2DA" }}>Team & ownership</strong> — who owns what (RACI)</li>
+                <li style={{ marginBottom: 4 }}><strong style={{ color: "#E4E2DA" }}>Artifacts</strong> — templates, playbooks, and frameworks to adopt</li>
+                <li style={{ marginBottom: 4 }}><strong style={{ color: "#E4E2DA" }}>DevEx connection</strong> — how it ties to developer experience</li>
+                <li style={{ marginBottom: 4 }}><strong style={{ color: "#E4E2DA" }}>Anti-patterns</strong> — what to avoid at your stage</li>
+              </ul>
+              <p style={{ color: "#8A9A88", fontSize: 13 }}>
+                Built on principles from DORA, SPACE, Team Topologies, and Platform Engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* ── Header ── */}
       <div className="tt-header" style={{ borderBottom: "1px solid #1A201C", background: "#0F140F" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -1293,6 +1366,12 @@ export default function TechTrellis() {
             <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontWeight: 600, fontSize: 16, letterSpacing: "-0.01em", marginLeft: 6 }}>
               <span style={{ color: "#5DAE72" }}>Tech</span><span style={{ color: "#E4E2DA" }}>Trellis</span>
             </span>
+            <button onClick={() => setShowInfo(true)} style={{
+              width: 20, height: 20, borderRadius: "50%", border: "1px solid #2A3228", background: "transparent",
+              color: "#8A9A88", fontSize: 12, fontFamily: "'IBM Plex Mono', monospace", fontWeight: 600,
+              cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
+              marginLeft: 6, transition: "border-color 0.2s, color 0.2s",
+            }}>i</button>
           </div>
           <span style={{ width: 1, height: 14, background: "#1A201C" }} />
           <span style={{ fontSize: 14, color: "#8E968A", fontFamily: "'IBM Plex Mono', monospace", fontWeight: 400 }}>techtrellis.dev</span>
@@ -1312,7 +1391,7 @@ export default function TechTrellis() {
           <span style={{ fontSize: 11, fontWeight: 600, color: "#8A9A88", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>Growth Phase</span>
         </div>
         <div className="tt-phases">
-          {GROWTH_PHASES.map(g => {
+          {growthPhases.map(g => {
             const on = g.id === phase;
             return (
               <button key={g.id} onClick={() => setPhase(g.id)} style={{
@@ -1333,7 +1412,7 @@ export default function TechTrellis() {
           <span style={{ fontSize: 11, fontWeight: 600, color: "#8A9A88", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>The Lattice</span>
         </div>
         <div className="tt-lattice">
-          {NAV_ALL.map(n => {
+          {stages.map(n => {
             const on = n.id === stageId;
             return (
               <button key={n.id} onClick={() => setStageId(n.id)} style={{
@@ -1433,7 +1512,7 @@ export default function TechTrellis() {
               ))}
               <h3 style={{ fontSize: 12, fontWeight: 600, color: "#5DAE72", margin: "16px 0 10px", textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Key Artifacts</h3>
               {data.artifacts.slice(0, 2).map((a, i) => {
-                const k = KIND[a.kind] || KIND.artifact;
+                const k = artifactKinds[a.kind] || artifactKinds.artifact;
                 return (
                   <div key={i} style={{ padding: "10px 12px", background: "#111611", borderRadius: 6, border: "1px solid #1A201C", marginBottom: 5, cursor: "pointer" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 3 }}>
@@ -1467,11 +1546,11 @@ export default function TechTrellis() {
               {data.team.map((m, i) => {
                 const parts = m.raci.split("+");
                 return (
-                  <div key={i} style={{ padding: "11px 13px", background: "#111611", borderRadius: 7, border: "1px solid #1A201C", borderLeft: `3px solid ${RC[parts[0]]}` }}>
+                  <div key={i} style={{ padding: "11px 13px", background: "#111611", borderRadius: 7, border: "1px solid #1A201C", borderLeft: `3px solid ${raciTypes[parts[0]]}` }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 3 }}>
                       <span style={{ fontSize: 14, fontWeight: 600, color: "#E4E2DA" }}>{m.role}</span>
                       <div style={{ display: "flex", gap: 3, flexShrink: 0 }}>
-                        {parts.map(r => <span key={r} style={{ fontSize: 11, fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", color: RC[r], background: RC[r] + "18", padding: "2px 6px", borderRadius: 3 }}>{r}</span>)}
+                        {parts.map(r => <span key={r} style={{ fontSize: 11, fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", color: raciTypes[r], background: raciTypes[r] + "18", padding: "2px 6px", borderRadius: 3 }}>{r}</span>)}
                       </div>
                     </div>
                     <span style={{ fontSize: 13, color: "#9A9888" }}>{m.note}</span>
@@ -1493,7 +1572,7 @@ export default function TechTrellis() {
             </div>
             <div className="tt-artifact-grid">
               {data.artifacts.map((a, i) => {
-                const k = KIND[a.kind] || KIND.artifact;
+                const k = artifactKinds[a.kind] || artifactKinds.artifact;
                 return (
                   <div key={i} style={{ padding: "12px 14px", background: "#111611", borderRadius: 7, border: "1px solid #1A201C", cursor: "pointer", transition: "border-color 0.2s" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
