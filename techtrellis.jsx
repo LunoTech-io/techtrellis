@@ -1265,7 +1265,7 @@ export default function TechTrellis() {
           .tt-dxavoid{flex-direction:column;height:auto;gap:8px}
           .tt-dxavoid>div{flex:none}
           .tt-tabs{overflow-x:auto;gap:0}
-          .tt-tabs button{padding:8px 10px !important;font-size:11px !important;white-space:nowrap}
+          .tt-tabs button{padding:8px 10px !important;font-size:13px !important;white-space:nowrap}
           .tt-content{padding:14px 14px 32px;height:auto;min-height:300px}
           .tt-grid2{grid-template-columns:1fr}
           .tt-team-grid{grid-template-columns:1fr}
@@ -1278,7 +1278,7 @@ export default function TechTrellis() {
           .tt-root{padding:0 8px}
           .tt-phases{grid-template-columns:repeat(2,1fr)}
           .tt-lattice{grid-template-columns:repeat(2,1fr)}
-          .tt-lattice .tt-label{font-size:10px !important}
+          .tt-lattice .tt-label{font-size:12px !important}
         }
       `}</style>
 
@@ -1295,9 +1295,9 @@ export default function TechTrellis() {
             </span>
           </div>
           <span style={{ width: 1, height: 14, background: "#1A201C" }} />
-          <span style={{ fontSize: 12, color: "#8E968A", fontFamily: "'IBM Plex Mono', monospace", fontWeight: 400 }}>techtrellis.dev</span>
+          <span style={{ fontSize: 14, color: "#8E968A", fontFamily: "'IBM Plex Mono', monospace", fontWeight: 400 }}>techtrellis.dev</span>
         </div>
-        <span className="tt-header-badge" style={{ fontSize: 9, color: "#8A9A88", fontFamily: "'IBM Plex Mono', monospace", padding: "4px 10px", background: "#111611", borderRadius: 5, border: "1px solid #1A201C" }}>
+        <span className="tt-header-badge" style={{ fontSize: 11, color: "#8A9A88", fontFamily: "'IBM Plex Mono', monospace", padding: "4px 10px", background: "#111611", borderRadius: 5, border: "1px solid #1A201C" }}>
           {gp.label} · {gp.range}
         </span>
       </div>
@@ -1305,11 +1305,11 @@ export default function TechTrellis() {
       {/* ── Where You Are ── */}
       <div className="tt-section">
         <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
-          <span style={{ fontSize: 10, fontWeight: 700, color: "#E4E2DA", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>Where You Are</span>
+          <span style={{ fontSize: 12, fontWeight: 700, color: "#E4E2DA", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>Where You Are</span>
           <span style={{ flex: 1, height: 1, background: "#1A201C" }} />
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-          <span style={{ fontSize: 9, fontWeight: 600, color: "#8A9A88", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>Growth Phase</span>
+          <span style={{ fontSize: 11, fontWeight: 600, color: "#8A9A88", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>Growth Phase</span>
         </div>
         <div className="tt-phases">
           {GROWTH_PHASES.map(g => {
@@ -1321,16 +1321,16 @@ export default function TechTrellis() {
                 borderRadius: 8, border: on ? `1.5px solid ${g.accent}30` : "1.5px solid #161C18",
                 transition: "all 0.2s", display: "flex", flexDirection: "column", alignItems: "center", gap: 3,
               }}>
-                <span style={{ fontSize: 12, fontWeight: 600, color: on ? g.accent : "#8A9A88", fontFamily: "'Source Serif 4', serif", transition: "color 0.2s" }}>{g.label}</span>
-                <span style={{ fontSize: 9, color: on ? "#9AAA98" : "#5E6E5C", fontFamily: "'IBM Plex Mono', monospace", transition: "color 0.2s" }}>{g.range}</span>
+                <span style={{ fontSize: 14, fontWeight: 600, color: on ? g.accent : "#8A9A88", fontFamily: "'Source Serif 4', serif", transition: "color 0.2s" }}>{g.label}</span>
+                <span style={{ fontSize: 11, color: on ? "#9AAA98" : "#5E6E5C", fontFamily: "'IBM Plex Mono', monospace", transition: "color 0.2s" }}>{g.range}</span>
               </button>
             );
           })}
         </div>
-        <p style={{ fontSize: 11, color: "#8A9A88", marginTop: 7, fontStyle: "italic", fontFamily: "'Source Serif 4', serif" }}>{gp.desc}</p>
+        <p style={{ fontSize: 13, color: "#8A9A88", marginTop: 7, fontStyle: "italic", fontFamily: "'Source Serif 4', serif" }}>{gp.desc}</p>
 
         <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8, marginTop: 16 }}>
-          <span style={{ fontSize: 9, fontWeight: 600, color: "#8A9A88", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>The Lattice</span>
+          <span style={{ fontSize: 11, fontWeight: 600, color: "#8A9A88", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>The Lattice</span>
         </div>
         <div className="tt-lattice">
           {NAV_ALL.map(n => {
@@ -1343,8 +1343,8 @@ export default function TechTrellis() {
                 transition: "all 0.2s", display: "flex", flexDirection: "column", alignItems: "center", gap: 4,
               }}>
                 <StageIcon stage={n.id} size={20} color={on ? "#5DAE72" : "#6E7E6C"} strokeWidth={2} style={{ transition: "color 0.2s" }} />
-                <span className="tt-label" style={{ fontSize: 11, fontWeight: 600, color: on ? "#E4E2DA" : "#8A9A88", fontFamily: "'Source Serif 4', serif", transition: "color 0.2s" }}>{n.label}</span>
-                <span className="tt-short" style={{ fontSize: 8, color: on ? "#8A9A88" : "#5E6E5C", fontFamily: "'IBM Plex Mono', monospace", transition: "color 0.2s", textAlign: "center", lineHeight: 1.2 }}>{n.short}</span>
+                <span className="tt-label" style={{ fontSize: 13, fontWeight: 600, color: on ? "#E4E2DA" : "#8A9A88", fontFamily: "'Source Serif 4', serif", transition: "color 0.2s" }}>{n.label}</span>
+                <span className="tt-short" style={{ fontSize: 10, color: on ? "#8A9A88" : "#5E6E5C", fontFamily: "'IBM Plex Mono', monospace", transition: "color 0.2s", textAlign: "center", lineHeight: 1.2 }}>{n.short}</span>
               </button>
             );
           })}
@@ -1354,7 +1354,7 @@ export default function TechTrellis() {
       {/* ── Your Toolkit ── */}
       <div className="tt-section" style={{ paddingBottom: 0 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{ fontSize: 10, fontWeight: 700, color: "#E4E2DA", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>Your Toolkit</span>
+          <span style={{ fontSize: 12, fontWeight: 700, color: "#E4E2DA", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'IBM Plex Mono', monospace" }}>Your Toolkit</span>
           <span style={{ flex: 1, height: 1, background: "#1A201C" }} />
         </div>
       </div>
@@ -1366,31 +1366,31 @@ export default function TechTrellis() {
           </div>
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 3 }}>
-              <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, color: "#5DAE72", fontWeight: 600 }}>{lattice.num}</span>
-              <h1 style={{ fontSize: 22, fontWeight: 800, margin: 0, letterSpacing: "-0.02em", color: "#E4E2DA" }}>{lattice.label}</h1>
-              <span style={{ fontSize: 9, padding: "2px 8px", borderRadius: 4, background: gp.accent + "14", color: gp.accent, fontFamily: "'IBM Plex Mono', monospace", fontWeight: 600 }}>{gp.label}</span>
+              <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 12, color: "#5DAE72", fontWeight: 600 }}>{lattice.num}</span>
+              <h1 style={{ fontSize: 24, fontWeight: 800, margin: 0, letterSpacing: "-0.02em", color: "#E4E2DA" }}>{lattice.label}</h1>
+              <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 4, background: gp.accent + "14", color: gp.accent, fontFamily: "'IBM Plex Mono', monospace", fontWeight: 600 }}>{gp.label}</span>
             </div>
-            <p style={{ fontSize: 13, color: "#9AAA98", lineHeight: 1.4 }}>{lattice.core}</p>
+            <p style={{ fontSize: 15, color: "#9AAA98", lineHeight: 1.4 }}>{lattice.core}</p>
           </div>
         </div>
 
         {/* Reality */}
         <div className="tt-reality" style={{ padding: "12px 16px", background: "#111611", borderRadius: 8, border: "1px solid #1A201C", marginBottom: 12 }}>
-          <span style={{ fontSize: 9, fontWeight: 600, color: gp.accent, fontFamily: "'IBM Plex Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Reality at {gp.range}</span>
-          <p style={{ fontSize: 13, color: "#CCC8BE", margin: "5px 0 0", lineHeight: 1.5 }}>{data.reality}</p>
+          <span style={{ fontSize: 11, fontWeight: 600, color: gp.accent, fontFamily: "'IBM Plex Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Reality at {gp.range}</span>
+          <p style={{ fontSize: 15, color: "#CCC8BE", margin: "5px 0 0", lineHeight: 1.5 }}>{data.reality}</p>
         </div>
 
         {/* DevEx + Avoid */}
         <div className="tt-dxavoid">
           <div style={{ padding: "10px 14px", background: "#111611", borderRadius: 8, border: "1px solid #1A201C" }}>
-            <span style={{ fontSize: 8, fontWeight: 600, color: "#5DAE72", fontFamily: "'IBM Plex Mono', monospace", textTransform: "uppercase", background: "#5DAE7212", padding: "2px 6px", borderRadius: 3, letterSpacing: "0.06em" }}>DevEx Connection</span>
-            <p style={{ fontSize: 12, color: "#A8A698", marginTop: 6, lineHeight: 1.5 }}>{data.dx}</p>
+            <span style={{ fontSize: 10, fontWeight: 600, color: "#5DAE72", fontFamily: "'IBM Plex Mono', monospace", textTransform: "uppercase", background: "#5DAE7212", padding: "2px 6px", borderRadius: 3, letterSpacing: "0.06em" }}>DevEx Connection</span>
+            <p style={{ fontSize: 14, color: "#A8A698", marginTop: 6, lineHeight: 1.5 }}>{data.dx}</p>
           </div>
           <div style={{ padding: "10px 14px", background: "#14110F", borderRadius: 8, border: "1px solid #201A18" }}>
-            <span style={{ fontSize: 8, fontWeight: 600, color: "#D45B5B", fontFamily: "'IBM Plex Mono', monospace", textTransform: "uppercase", background: "#D45B5B12", padding: "2px 6px", borderRadius: 3, letterSpacing: "0.06em" }}>Avoid at This Stage</span>
+            <span style={{ fontSize: 10, fontWeight: 600, color: "#D45B5B", fontFamily: "'IBM Plex Mono', monospace", textTransform: "uppercase", background: "#D45B5B12", padding: "2px 6px", borderRadius: 3, letterSpacing: "0.06em" }}>Avoid at This Stage</span>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 6 }}>
               {data.avoid.map((a, i) => (
-                <span key={i} style={{ fontSize: 10, color: "#D47B7B", padding: "3px 8px", background: "#D45B5B08", borderRadius: 4, border: "1px solid #D45B5B12" }}>✕ {a}</span>
+                <span key={i} style={{ fontSize: 12, color: "#D47B7B", padding: "3px 8px", background: "#D45B5B08", borderRadius: 4, border: "1px solid #D45B5B12" }}>✕ {a}</span>
               ))}
             </div>
           </div>
@@ -1400,7 +1400,7 @@ export default function TechTrellis() {
         <div className="tt-tabs">
           {["overview", "metrics", "team", "artifacts"].map(t => (
             <button key={t} onClick={() => setTab(t)} style={{
-              padding: "8px 16px", fontSize: 12, fontWeight: 600,
+              padding: "8px 16px", fontSize: 14, fontWeight: 600,
               color: tab === t ? "#5DAE72" : "#8A9A88",
               background: tab === t ? "#131A14" : "transparent",
               border: "none", borderBottom: tab === t ? "2px solid #5DAE72" : "2px solid transparent",
@@ -1416,31 +1416,31 @@ export default function TechTrellis() {
         {tab === "overview" && (
           <div className="tt-grid2">
             <div>
-              <h3 style={{ fontSize: 10, fontWeight: 600, color: "#5DAE72", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Goals</h3>
+              <h3 style={{ fontSize: 12, fontWeight: 600, color: "#5DAE72", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Goals</h3>
               {data.goals.map((g, i) => (
                 <div key={i} style={{ padding: "9px 12px", background: "#111611", borderRadius: 6, border: "1px solid #1A201C", marginBottom: 5 }}>
-                  <span style={{ fontSize: 12, color: "#CCC8BE", lineHeight: "17px" }}>{g.text}</span>
+                  <span style={{ fontSize: 14, color: "#CCC8BE", lineHeight: "17px" }}>{g.text}</span>
                 </div>
               ))}
             </div>
             <div>
-              <h3 style={{ fontSize: 10, fontWeight: 600, color: "#5DAE72", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Recommended KPIs</h3>
+              <h3 style={{ fontSize: 12, fontWeight: 600, color: "#5DAE72", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Recommended KPIs</h3>
               {data.metrics.slice(0, 3).map((m, i) => (
                 <div key={i} className="tt-metric-row" style={{ padding: "9px 12px", background: "#111611", borderRadius: 6, border: "1px solid #1A201C", marginBottom: 5 }}>
-                  <span style={{ fontSize: 12, color: "#CCC8BE" }}>{m.name}</span>
-                  <span style={{ fontSize: 9, color: "#8A9A88", fontFamily: "'IBM Plex Mono', monospace" }}>{m.why}</span>
+                  <span style={{ fontSize: 14, color: "#CCC8BE" }}>{m.name}</span>
+                  <span style={{ fontSize: 11, color: "#8A9A88", fontFamily: "'IBM Plex Mono', monospace" }}>{m.why}</span>
                 </div>
               ))}
-              <h3 style={{ fontSize: 10, fontWeight: 600, color: "#5DAE72", margin: "16px 0 10px", textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Key Artifacts</h3>
+              <h3 style={{ fontSize: 12, fontWeight: 600, color: "#5DAE72", margin: "16px 0 10px", textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Key Artifacts</h3>
               {data.artifacts.slice(0, 2).map((a, i) => {
                 const k = KIND[a.kind] || KIND.artifact;
                 return (
                   <div key={i} style={{ padding: "10px 12px", background: "#111611", borderRadius: 6, border: "1px solid #1A201C", marginBottom: 5, cursor: "pointer" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 3 }}>
-                      <span style={{ fontSize: 12, fontWeight: 600, color: "#E4E2DA" }}>{a.title}</span>
-                      <span style={{ fontSize: 8, fontWeight: 600, color: k.c, background: k.c + "15", padding: "2px 6px", borderRadius: 3, textTransform: "uppercase", fontFamily: "'IBM Plex Mono', monospace", flexShrink: 0 }}>{k.l}</span>
+                      <span style={{ fontSize: 14, fontWeight: 600, color: "#E4E2DA" }}>{a.title}</span>
+                      <span style={{ fontSize: 10, fontWeight: 600, color: k.c, background: k.c + "15", padding: "2px 6px", borderRadius: 3, textTransform: "uppercase", fontFamily: "'IBM Plex Mono', monospace", flexShrink: 0 }}>{k.l}</span>
                     </div>
-                    <span style={{ fontSize: 11, color: "#9A9888" }}>{a.desc}</span>
+                    <span style={{ fontSize: 13, color: "#9A9888" }}>{a.desc}</span>
                   </div>
                 );
               })}
@@ -1450,11 +1450,11 @@ export default function TechTrellis() {
 
         {tab === "metrics" && (
           <div>
-            <h3 style={{ fontSize: 10, fontWeight: 600, color: "#5DAE72", marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Recommended KPIs — {lattice.label} @ {gp.label}</h3>
+            <h3 style={{ fontSize: 12, fontWeight: 600, color: "#5DAE72", marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Recommended KPIs — {lattice.label} @ {gp.label}</h3>
             {data.metrics.map((m, i) => (
               <div key={i} className="tt-metric-row" style={{ padding: "10px 12px", background: "#111611", borderRadius: 6, border: "1px solid #1A201C", marginBottom: 5 }}>
-                <span style={{ fontSize: 12, color: "#CCC8BE" }}>{m.name}</span>
-                <span style={{ fontSize: 9, color: "#8A9A88", fontFamily: "'IBM Plex Mono', monospace" }}>{m.why}</span>
+                <span style={{ fontSize: 14, color: "#CCC8BE" }}>{m.name}</span>
+                <span style={{ fontSize: 11, color: "#8A9A88", fontFamily: "'IBM Plex Mono', monospace" }}>{m.why}</span>
               </div>
             ))}
           </div>
@@ -1462,24 +1462,24 @@ export default function TechTrellis() {
 
         {tab === "team" && (
           <div>
-            <h3 style={{ fontSize: 10, fontWeight: 600, color: "#5DAE72", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Ownership — {lattice.label} @ {gp.label}</h3>
+            <h3 style={{ fontSize: 12, fontWeight: 600, color: "#5DAE72", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Ownership — {lattice.label} @ {gp.label}</h3>
             <div className="tt-team-grid">
               {data.team.map((m, i) => {
                 const parts = m.raci.split("+");
                 return (
                   <div key={i} style={{ padding: "11px 13px", background: "#111611", borderRadius: 7, border: "1px solid #1A201C", borderLeft: `3px solid ${RC[parts[0]]}` }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 3 }}>
-                      <span style={{ fontSize: 12, fontWeight: 600, color: "#E4E2DA" }}>{m.role}</span>
+                      <span style={{ fontSize: 14, fontWeight: 600, color: "#E4E2DA" }}>{m.role}</span>
                       <div style={{ display: "flex", gap: 3, flexShrink: 0 }}>
-                        {parts.map(r => <span key={r} style={{ fontSize: 9, fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", color: RC[r], background: RC[r] + "18", padding: "2px 6px", borderRadius: 3 }}>{r}</span>)}
+                        {parts.map(r => <span key={r} style={{ fontSize: 11, fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", color: RC[r], background: RC[r] + "18", padding: "2px 6px", borderRadius: 3 }}>{r}</span>)}
                       </div>
                     </div>
-                    <span style={{ fontSize: 11, color: "#9A9888" }}>{m.note}</span>
+                    <span style={{ fontSize: 13, color: "#9A9888" }}>{m.note}</span>
                   </div>
                 );
               })}
             </div>
-            <div style={{ marginTop: 12, padding: "10px 14px", fontSize: 11, color: "#8A9A88", background: "#111611", borderRadius: 6, border: "1px solid #1A201C", lineHeight: 1.6, fontFamily: "'IBM Plex Mono', monospace" }}>
+            <div style={{ marginTop: 12, padding: "10px 14px", fontSize: 13, color: "#8A9A88", background: "#111611", borderRadius: 6, border: "1px solid #1A201C", lineHeight: 1.6, fontFamily: "'IBM Plex Mono', monospace" }}>
               <strong style={{ color: "#E07A3A" }}>A</strong> Accountable · <strong style={{ color: "#5DAE72" }}>R</strong> Responsible · <strong style={{ color: "#B08AD6" }}>C</strong> Consulted · <strong style={{ color: "#A8A698" }}>I</strong> Informed
             </div>
           </div>
@@ -1488,8 +1488,8 @@ export default function TechTrellis() {
         {tab === "artifacts" && (
           <div>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 12 }}>
-              <h3 style={{ fontSize: 10, fontWeight: 600, color: "#5DAE72", textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Artifacts — {lattice.label} @ {gp.label}</h3>
-              <button style={{ padding: "5px 12px", fontSize: 10, fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", color: "#0D110E", background: "#5DAE72", border: "none", borderRadius: 5, cursor: "pointer" }}>+ Upload</button>
+              <h3 style={{ fontSize: 12, fontWeight: 600, color: "#5DAE72", textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "'IBM Plex Mono', monospace" }}>Artifacts — {lattice.label} @ {gp.label}</h3>
+              <button style={{ padding: "5px 12px", fontSize: 12, fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", color: "#0D110E", background: "#5DAE72", border: "none", borderRadius: 5, cursor: "pointer" }}>+ Upload</button>
             </div>
             <div className="tt-artifact-grid">
               {data.artifacts.map((a, i) => {
@@ -1497,10 +1497,10 @@ export default function TechTrellis() {
                 return (
                   <div key={i} style={{ padding: "12px 14px", background: "#111611", borderRadius: 7, border: "1px solid #1A201C", cursor: "pointer", transition: "border-color 0.2s" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
-                      <span style={{ fontSize: 13, fontWeight: 600, color: "#E4E2DA" }}>{a.title}</span>
-                      <span style={{ fontSize: 8, fontWeight: 600, color: k.c, background: k.c + "15", padding: "2px 7px", borderRadius: 3, textTransform: "uppercase", letterSpacing: "0.05em", fontFamily: "'IBM Plex Mono', monospace", flexShrink: 0 }}>{k.l}</span>
+                      <span style={{ fontSize: 15, fontWeight: 600, color: "#E4E2DA" }}>{a.title}</span>
+                      <span style={{ fontSize: 10, fontWeight: 600, color: k.c, background: k.c + "15", padding: "2px 7px", borderRadius: 3, textTransform: "uppercase", letterSpacing: "0.05em", fontFamily: "'IBM Plex Mono', monospace", flexShrink: 0 }}>{k.l}</span>
                     </div>
-                    <span style={{ fontSize: 11, color: "#9A9888", lineHeight: "15px" }}>{a.desc}</span>
+                    <span style={{ fontSize: 13, color: "#9A9888", lineHeight: "15px" }}>{a.desc}</span>
                   </div>
                 );
               })}
@@ -1511,10 +1511,10 @@ export default function TechTrellis() {
 
       {/* ── Footer ── */}
       <div className="tt-footer">
-        <span style={{ fontSize: 10, color: "#5E6E5C", fontFamily: "'IBM Plex Mono', monospace" }}>
+        <span style={{ fontSize: 12, color: "#5E6E5C", fontFamily: "'IBM Plex Mono', monospace" }}>
           <span style={{ color: "#5DAE72" }}>Tech</span>Trellis — the support structure for engineering growth
         </span>
-        <span style={{ fontSize: 9, color: "#5E6E5C", fontFamily: "'IBM Plex Mono', monospace" }}>
+        <span style={{ fontSize: 11, color: "#5E6E5C", fontFamily: "'IBM Plex Mono', monospace" }}>
           DORA · SPACE · Team Topologies · Platform Engineering
         </span>
       </div>
